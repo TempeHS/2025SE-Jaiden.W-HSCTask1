@@ -1,13 +1,116 @@
-*   {
-
-}
+/* General Styling */
 body {
-
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
 }
-.container {
 
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
 }
 
-.row {
-    
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #000 !important; /* Change text color to black */
+}
+
+.navbar .nav-link:hover {
+    color: #99b4dd !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.form-control {
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-outline-success {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+/* Login Form Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px); /* Subtract navbar height */
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.input__wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.input__field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.input__field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+p {
+    color: #d9534f;
+    font-size: 0.9rem;
+    text-align: center;
 }

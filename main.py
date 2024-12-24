@@ -23,7 +23,7 @@ logging.basicConfig(
 
 # Generate a unique basic 16 key: https://acte.ltd/utils/randomkeygen
 app = Flask(__name__)
-app.secret_key = b"_53oi3uriq9pifpff;apl"
+app.secret_key = b"hSWrqNxeExuR03aq;apl"
 csrf = CSRFProtect(app)
 
 
