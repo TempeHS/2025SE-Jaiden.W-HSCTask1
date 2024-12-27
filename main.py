@@ -1,12 +1,12 @@
-from flask import Flask
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import jsonify
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired
+from flask_wtf.csrf import CSRFProtect
 import requests
-from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
+import sqlite3 as sql
 
 import userManagement as dbHandler
 
@@ -23,8 +23,8 @@ logging.basicConfig(
 
 # Generate a unique basic 16 key: https://acte.ltd/utils/randomkeygen
 app = Flask(__name__)
-app.secret_key = b"hSWrqNxeExuR03aq;apl"
-csrf = CSRFProtect(app)
+app.secret_key = b"hSWrqNxeExuR03aq;apl"  # Secret key for CSRF protection and session management
+csrf = CSRFProtect(app)  # Initialize CSRF protection
 
 
 # Redirect index.html to domain root for consistent UX
@@ -34,9 +34,15 @@ csrf = CSRFProtect(app)
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
 def root():
-    return redirect("/", 302)
+    return redirect("/", 302)  # Redirect to the root URL
 
+# Define the login form using Flask-WTF
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])  # Username field with validation
+    password = PasswordField('Password', validators=[DataRequired()])  # Password field with validation
+    submit = SubmitField('Log In')  # Submit button
 
+# Route for the login page
 @app.route("/", methods=["POST", "GET"])
 @csp_header(
     {
@@ -58,13 +64,30 @@ def root():
         "frame-src": "'none'",
     }
 )
-def index():
-    return render_template("/index.html")
+def login():
+    form = LoginForm()  # Create an instance of the login form
+    if form.validate_on_submit():  # Check if the form is submitted and valid
+        username = form.username.data
+        password = form.password.data
+        # Connect to the database
+        con = sql.connect("/databaseFiles/database.db")
+        cur = con.cursor()
+        # Use parameterized queries to prevent SQL injection
+        cur.execute("SELECT * FROM secure_users_9f WHERE username = ?", (username,))
+        user = cur.fetchone()
+        con.close()
+        if user and user[2] == password:  # Assuming the password is stored in the third column
+            # Handle successful login
+            return redirect(url_for('form'))  # Redirect to the success page if login is successful
+        else:
+            # Handle login failure
+            flash('Invalid username or password', 'danger')
+    return render_template('index.html', form=form)  # Render the login page with the form
 
-
+# Route for the privacy policy page
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    return render_template("/privacy.html")
+    return render_template("/privacy.html")  # Render the privacy policy page
 
 
 # example CSRF protected form
