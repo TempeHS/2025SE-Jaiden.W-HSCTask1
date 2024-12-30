@@ -1,10 +1,10 @@
 # Agile Artifacts
 ## Sprint backlog list of achievables (annotate changes made during sprint, including data required) 
-- Implement a privacy handling policy
-- Implement a strict content security policy
+- ~~Implement a privacy handling policy~~
+- ~~Implement a strict content security policy~~
 - Create and implement CSS for all pages, including sign-up, sign in, log/diary
-- SQLite database design and integration
-- Ability for new team members to self-sign up aswell as existing members to log in   
+- ~~SQLite database design and integration~~
+- ~~Ability for new team members to self-sign up aswell as existing members to log in~~ 
 
 ## Increment (what must be achieved by the end of the sprint)
 
