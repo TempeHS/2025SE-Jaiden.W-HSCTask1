@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; manifest-src 'self' https://github.dev">
+<div class="login-container">
+    <h2 class="form-title">Sign Up</h2>
+    <form action="{{ url_for('sign_up') }}" method="post" class="login-form">
+        {{ form.hidden_tag() }}
+        <div class="input__wrapper">
+            {{ form.username.label }} {{ form.username(class="input__field") }}
+        </div>
+        <div class="input__wrapper">
+            {{ form.password.label }} {{ form.password(class="input__field") }}
+        </div>
+        <div class="input__wrapper">
+            {{ form.submit(class="btn") }}
+        </div>
+        <div class="input__wrapper">
+            <h3 class="form-other">Already have an account? <a href="{{ url_for('login') }}">Login</a></h3>
+        </div>        
+        {% if error %}
+            <p class="error-message">{{ message }}</p>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

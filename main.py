@@ -1,18 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
+from wtforms import StringField, PasswordField, TextAreaField, DateTimeField, DecimalField, URLField, SubmitField
 from wtforms.validators import DataRequired
 from flask_wtf.csrf import CSRFProtect
-import requests
 from flask_csp.csp import csp_header
 import logging
-import sqlite3 as sql
-
-import userManagement as dbHandler
+import databaseManagement as dbHandler
+from datetime import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # Code snippet for logging a message
 # app.logger.critical("message")
-
 app_log = logging.getLogger(__name__)
 logging.basicConfig(
     filename="security_log.log",
@@ -26,7 +24,6 @@ app = Flask(__name__)
 app.secret_key = b"hSWrqNxeExuR03aq;apl"  # Secret key for CSRF protection and session management
 csrf = CSRFProtect(app)  # Initialize CSRF protection
 
-
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
 @app.route("/index.htm", methods=["GET"])
@@ -36,11 +33,15 @@ csrf = CSRFProtect(app)  # Initialize CSRF protection
 def root():
     return redirect("/", 302)  # Redirect to the root URL
 
-# Define the login form using Flask-WTF
+# Define the login, sign-up, log-entry form using Flask-WTF
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])  # Username field with validation
     password = PasswordField('Password', validators=[DataRequired()])  # Password field with validation
     submit = SubmitField('Log In')  # Submit button
+class SignUpForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])  
+    password = PasswordField('Password', validators=[DataRequired()])  
+    submit = SubmitField('Sign Up')  
 
 # Route for the login page
 @app.route("/", methods=["POST", "GET"])
@@ -65,41 +66,40 @@ class LoginForm(FlaskForm):
     }
 )
 def login():
-    form = LoginForm()  # Create an instance of the login form
-    if form.validate_on_submit():  # Check if the form is submitted and valid
-        username = form.username.data
-        password = form.password.data
-        # Connect to the database
-        con = sql.connect("/databaseFiles/database.db")
-        cur = con.cursor()
-        # Use parameterized queries to prevent SQL injection
-        cur.execute("SELECT * FROM secure_users_9f WHERE username = ?", (username,))
-        user = cur.fetchone()
-        con.close()
-        if user and user[2] == password:  # Assuming the password is stored in the third column
-            # Handle successful login
-            return redirect(url_for('form'))  # Redirect to the success page if login is successful
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = dbHandler.retrieveUserByUsername(form.username.data)
+        if user and check_password_hash(user['password'], form.password.data):
+            return redirect("/form.html")
         else:
-            # Handle login failure
             flash('Invalid username or password', 'danger')
-    return render_template('index.html', form=form)  # Render the login page with the form
+    return render_template("index.html", form=form)  # Render the login page with the form
+
+# Route for the sign up page
+@app.route('/signUp.html', methods=['GET', 'POST'])
+def sign_up():
+    form = SignUpForm()  # Create an instance of the sign up form
+    if request.method == "GET" and request.args.get("url"):
+        url = request.args.get("url", "")
+        return redirect(url, code=302)
+    if request.method == "POST":
+        try:
+            hashed_password = generate_password_hash(form.password.data)
+            dbHandler.insertUser(form.username.data, hashed_password)
+            return redirect("/index.html")
+        except Exception as e:
+            return render_template("signUp.html", error=True, message=str(e), form=form)
+    return render_template('signUp.html', form=form)
 
 # Route for the privacy policy page
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
     return render_template("/privacy.html")  # Render the privacy policy page
 
-
-# example CSRF protected form
-@app.route("/form.html", methods=["POST", "GET"])
-def form():
-    if request.method == "POST":
-        email = request.form["email"]
-        text = request.form["text"]
-        return render_template("/form.html")
-    else:
-        return render_template("/form.html")
-
+# Route for log entries
+@app.route('/form.html', methods=['GET','POST'])
+def log ():
+    return render_template('form.html')
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
@@ -107,7 +107,6 @@ def form():
 def csp_report():
     app.logger.critical(request.data.decode())
     return "done"
-
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
