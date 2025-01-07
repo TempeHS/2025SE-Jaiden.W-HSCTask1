@@ -20,17 +20,6 @@ def insertUser(username, hashed_password):
     con.commit()
     con.close()
 
-def retrieveUsers(username, password):
-    # Connect to the database
-    con = sql.connect(db_path)
-    cur = con.cursor()
-    # Use parameterized queries to prevent SQL injection
-    cur.execute("SELECT * FROM secure_users_9f WHERE username = ?", (username,))
-    user = cur.fetchone()
-    con.close()
-    if user and user[2] == password:  # Assuming the password is stored in the third column
-        return True
-
 def retrieveUserByUsername(username):
     conn = sql.connect(db_path)
     cur = conn.cursor()

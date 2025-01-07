@@ -17,9 +17,15 @@
         <div class="input__wrapper">
             <h3 class="form-other">Already have an account? <a href="{{ url_for('login') }}">Login</a></h3>
         </div>        
-        {% if error %}
-            <p class="error-message">{{ message }}</p>
-        {% endif %}
     </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages mt-3">
+                {% for category, message in messages %}
+                    <p class="flash-message {{ category }}">{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
 </div>
 {% endblock %}

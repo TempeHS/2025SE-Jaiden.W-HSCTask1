@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, TextAreaField, DateTimeField, DecimalField, URLField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Length, Regexp, Email
 from flask_wtf.csrf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
 import databaseManagement as dbHandler
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
+from forms import LoginForm, SignUpForm 
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -32,16 +33,6 @@ csrf = CSRFProtect(app)  # Initialize CSRF protection
 @app.route("/index.html", methods=["GET"])
 def root():
     return redirect("/", 302)  # Redirect to the root URL
-
-# Define the login, sign-up, log-entry form using Flask-WTF
-class LoginForm(FlaskForm):
-    username = StringField('Username', validators=[DataRequired()])  # Username field with validation
-    password = PasswordField('Password', validators=[DataRequired()])  # Password field with validation
-    submit = SubmitField('Log In')  # Submit button
-class SignUpForm(FlaskForm):
-    username = StringField('Username', validators=[DataRequired()])  
-    password = PasswordField('Password', validators=[DataRequired()])  
-    submit = SubmitField('Sign Up')  
 
 # Route for the login page
 @app.route("/", methods=["POST", "GET"])
@@ -82,13 +73,17 @@ def sign_up():
     if request.method == "GET" and request.args.get("url"):
         url = request.args.get("url", "")
         return redirect(url, code=302)
-    if request.method == "POST":
+    if form.validate_on_submit():  # Check if the form is submitted and valid
         try:
             hashed_password = generate_password_hash(form.password.data)
             dbHandler.insertUser(form.username.data, hashed_password)
             return redirect("/index.html")
         except Exception as e:
             return render_template("signUp.html", error=True, message=str(e), form=form)
+    else:
+        for field, errors in form.errors.items():
+            for error in errors:
+                flash(f"Error in {getattr(form, field).label.text}: {error}", 'danger')
     return render_template('signUp.html', form=form)
 
 # Route for the privacy policy page

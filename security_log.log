@@ -2788,3 +2788,331 @@
 2025-01-04 23:55:37,845 127.0.0.1 - - [04/Jan/2025 23:55:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
 2025-01-04 23:55:37,938 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
 2025-01-04 23:55:37,938 127.0.0.1 - - [04/Jan/2025 23:55:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:25:02,405 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-01-05 00:25:02,405 [33mPress CTRL+C to quit[0m
+2025-01-05 00:25:02,405  * Restarting with stat
+2025-01-05 00:25:02,594  * Debugger is active!
+2025-01-05 00:25:02,595  * Debugger PIN: 860-411-997
+2025-01-05 00:25:04,881 127.0.0.1 - - [05/Jan/2025 00:25:04] "GET /?vscodeBrowserReqId=1736036714128 HTTP/1.1" 200 -
+2025-01-05 00:25:04,882 127.0.0.1 - - [05/Jan/2025 00:25:04] "POST / HTTP/1.1" 200 -
+2025-01-05 00:25:05,199 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,204 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,220 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,403 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,435 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,518 127.0.0.1 - - [05/Jan/2025 00:25:05] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:25:05,553 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:25:05,553 127.0.0.1 - - [05/Jan/2025 00:25:05] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:25:31,104 127.0.0.1 - - [05/Jan/2025 00:25:31] "POST / HTTP/1.1" 200 -
+2025-01-05 00:25:31,192 127.0.0.1 - - [05/Jan/2025 00:25:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:25:31,199 127.0.0.1 - - [05/Jan/2025 00:25:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:31,200 127.0.0.1 - - [05/Jan/2025 00:25:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:25:31,244 127.0.0.1 - - [05/Jan/2025 00:25:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:31,281 127.0.0.1 - - [05/Jan/2025 00:25:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:25:31,400 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:25:31,400 127.0.0.1 - - [05/Jan/2025 00:25:31] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:27:57,655 127.0.0.1 - - [05/Jan/2025 00:27:57] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:27:57,906 127.0.0.1 - - [05/Jan/2025 00:27:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:27:57,948 127.0.0.1 - - [05/Jan/2025 00:27:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:27:57,955 127.0.0.1 - - [05/Jan/2025 00:27:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:27:58,144 127.0.0.1 - - [05/Jan/2025 00:27:58] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:27:58,330 127.0.0.1 - - [05/Jan/2025 00:27:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,358 127.0.0.1 - - [05/Jan/2025 00:28:00] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-05 00:28:00,389 127.0.0.1 - - [05/Jan/2025 00:28:00] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:28:00,417 127.0.0.1 - - [05/Jan/2025 00:28:00] "GET / HTTP/1.1" 200 -
+2025-01-05 00:28:00,527 127.0.0.1 - - [05/Jan/2025 00:28:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,528 127.0.0.1 - - [05/Jan/2025 00:28:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,528 127.0.0.1 - - [05/Jan/2025 00:28:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,568 127.0.0.1 - - [05/Jan/2025 00:28:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,597 127.0.0.1 - - [05/Jan/2025 00:28:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:28:00,699 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:28:00,699 127.0.0.1 - - [05/Jan/2025 00:28:00] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:31:21,426 127.0.0.1 - - [05/Jan/2025 00:31:21] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:31:21,685 127.0.0.1 - - [05/Jan/2025 00:31:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:31:21,717 127.0.0.1 - - [05/Jan/2025 00:31:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:31:21,718 127.0.0.1 - - [05/Jan/2025 00:31:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:21,917 127.0.0.1 - - [05/Jan/2025 00:31:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:22,105 127.0.0.1 - - [05/Jan/2025 00:31:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,145 127.0.0.1 - - [05/Jan/2025 00:31:30] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-05 00:31:30,176 127.0.0.1 - - [05/Jan/2025 00:31:30] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:31:30,206 127.0.0.1 - - [05/Jan/2025 00:31:30] "GET / HTTP/1.1" 200 -
+2025-01-05 00:31:30,308 127.0.0.1 - - [05/Jan/2025 00:31:30] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,309 127.0.0.1 - - [05/Jan/2025 00:31:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,310 127.0.0.1 - - [05/Jan/2025 00:31:30] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,343 127.0.0.1 - - [05/Jan/2025 00:31:30] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,596 127.0.0.1 - - [05/Jan/2025 00:31:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:31:30,701 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:31:30,701 127.0.0.1 - - [05/Jan/2025 00:31:30] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:35:26,638  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:35:26,674  * Restarting with stat
+2025-01-05 00:35:26,871  * Debugger is active!
+2025-01-05 00:35:26,872  * Debugger PIN: 860-411-997
+2025-01-05 00:35:31,678 127.0.0.1 - - [05/Jan/2025 00:35:31] "GET / HTTP/1.1" 200 -
+2025-01-05 00:35:31,964 127.0.0.1 - - [05/Jan/2025 00:35:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:31,966 127.0.0.1 - - [05/Jan/2025 00:35:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:31,975 127.0.0.1 - - [05/Jan/2025 00:35:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,149 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,321 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,388 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,465 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:35:32,466 127.0.0.1 - - [05/Jan/2025 00:35:32] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:35:32,601 127.0.0.1 - - [05/Jan/2025 00:35:32] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:35:32,696 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,698 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,706 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,742 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:32,774 127.0.0.1 - - [05/Jan/2025 00:35:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,432 127.0.0.1 - - [05/Jan/2025 00:35:37] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-05 00:35:37,465 127.0.0.1 - - [05/Jan/2025 00:35:37] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:35:37,496 127.0.0.1 - - [05/Jan/2025 00:35:37] "GET / HTTP/1.1" 200 -
+2025-01-05 00:35:37,599 127.0.0.1 - - [05/Jan/2025 00:35:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,604 127.0.0.1 - - [05/Jan/2025 00:35:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,610 127.0.0.1 - - [05/Jan/2025 00:35:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,650 127.0.0.1 - - [05/Jan/2025 00:35:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,678 127.0.0.1 - - [05/Jan/2025 00:35:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:35:37,778 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:35:37,778 127.0.0.1 - - [05/Jan/2025 00:35:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:36:45,397  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:36:45,427  * Restarting with stat
+2025-01-05 00:36:45,618  * Debugger is active!
+2025-01-05 00:36:45,618  * Debugger PIN: 860-411-997
+2025-01-05 00:36:50,760  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:36:50,789  * Restarting with stat
+2025-01-05 00:36:50,981  * Debugger is active!
+2025-01-05 00:36:50,982  * Debugger PIN: 860-411-997
+2025-01-05 00:37:16,293  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:37:16,323  * Restarting with stat
+2025-01-05 00:37:16,527  * Debugger is active!
+2025-01-05 00:37:16,527  * Debugger PIN: 860-411-997
+2025-01-05 00:37:18,822  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:37:18,852  * Restarting with stat
+2025-01-05 00:37:19,046  * Debugger is active!
+2025-01-05 00:37:19,046  * Debugger PIN: 860-411-997
+2025-01-05 00:37:19,882 127.0.0.1 - - [05/Jan/2025 00:37:19] "GET / HTTP/1.1" 200 -
+2025-01-05 00:37:20,114 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,154 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,156 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,327 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,496 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,566 127.0.0.1 - - [05/Jan/2025 00:37:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:37:20,645 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:37:20,645 127.0.0.1 - - [05/Jan/2025 00:37:20] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:37:20,947 127.0.0.1 - - [05/Jan/2025 00:37:20] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:37:21,044 127.0.0.1 - - [05/Jan/2025 00:37:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:21,050 127.0.0.1 - - [05/Jan/2025 00:37:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:21,052 127.0.0.1 - - [05/Jan/2025 00:37:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:21,290 127.0.0.1 - - [05/Jan/2025 00:37:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:21,320 127.0.0.1 - - [05/Jan/2025 00:37:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,120 127.0.0.1 - - [05/Jan/2025 00:37:37] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-05 00:37:37,153 127.0.0.1 - - [05/Jan/2025 00:37:37] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:37:37,187 127.0.0.1 - - [05/Jan/2025 00:37:37] "GET / HTTP/1.1" 200 -
+2025-01-05 00:37:37,285 127.0.0.1 - - [05/Jan/2025 00:37:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,292 127.0.0.1 - - [05/Jan/2025 00:37:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,300 127.0.0.1 - - [05/Jan/2025 00:37:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,332 127.0.0.1 - - [05/Jan/2025 00:37:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,361 127.0.0.1 - - [05/Jan/2025 00:37:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:37:37,462 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:37:37,462 127.0.0.1 - - [05/Jan/2025 00:37:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:43:27,311  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-05 00:43:27,341  * Restarting with stat
+2025-01-05 00:43:27,542  * Debugger is active!
+2025-01-05 00:43:27,542  * Debugger PIN: 860-411-997
+2025-01-05 00:43:44,108  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-05 00:43:44,139  * Restarting with stat
+2025-01-05 00:43:44,339  * Debugger is active!
+2025-01-05 00:43:44,339  * Debugger PIN: 860-411-997
+2025-01-05 00:43:44,790 127.0.0.1 - - [05/Jan/2025 00:43:44] "GET / HTTP/1.1" 200 -
+2025-01-05 00:43:45,139 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,141 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,142 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,332 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,500 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,589 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,653 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:43:45,653 127.0.0.1 - - [05/Jan/2025 00:43:45] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:43:45,867 127.0.0.1 - - [05/Jan/2025 00:43:45] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:43:45,947 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,952 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,955 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:45,993 127.0.0.1 - - [05/Jan/2025 00:43:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:46,033 127.0.0.1 - - [05/Jan/2025 00:43:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:48,432 127.0.0.1 - - [05/Jan/2025 00:43:48] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:43:48,518 127.0.0.1 - - [05/Jan/2025 00:43:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:48,527 127.0.0.1 - - [05/Jan/2025 00:43:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:48,530 127.0.0.1 - - [05/Jan/2025 00:43:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:48,571 127.0.0.1 - - [05/Jan/2025 00:43:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:48,606 127.0.0.1 - - [05/Jan/2025 00:43:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:58,638 127.0.0.1 - - [05/Jan/2025 00:43:58] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:43:58,712 127.0.0.1 - - [05/Jan/2025 00:43:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:58,721 127.0.0.1 - - [05/Jan/2025 00:43:58] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:58,722 127.0.0.1 - - [05/Jan/2025 00:43:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:43:58,768 127.0.0.1 - - [05/Jan/2025 00:43:58] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:43:58,797 127.0.0.1 - - [05/Jan/2025 00:43:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:08,365 127.0.0.1 - - [05/Jan/2025 00:44:08] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:44:08,452 127.0.0.1 - - [05/Jan/2025 00:44:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:44:08,459 127.0.0.1 - - [05/Jan/2025 00:44:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:08,460 127.0.0.1 - - [05/Jan/2025 00:44:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:44:08,492 127.0.0.1 - - [05/Jan/2025 00:44:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:08,520 127.0.0.1 - - [05/Jan/2025 00:44:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:15,420 127.0.0.1 - - [05/Jan/2025 00:44:15] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:44:15,503 127.0.0.1 - - [05/Jan/2025 00:44:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:15,504 127.0.0.1 - - [05/Jan/2025 00:44:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:44:15,505 127.0.0.1 - - [05/Jan/2025 00:44:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:44:15,543 127.0.0.1 - - [05/Jan/2025 00:44:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:44:15,572 127.0.0.1 - - [05/Jan/2025 00:44:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:45:50,612  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:45:50,643  * Restarting with stat
+2025-01-05 00:45:50,841  * Debugger is active!
+2025-01-05 00:45:50,841  * Debugger PIN: 860-411-997
+2025-01-05 00:45:53,085  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/forms.py', reloading
+2025-01-05 00:45:53,115  * Restarting with stat
+2025-01-05 00:45:53,306  * Debugger is active!
+2025-01-05 00:45:53,306  * Debugger PIN: 860-411-997
+2025-01-05 00:46:08,500  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-05 00:46:08,530  * Restarting with stat
+2025-01-05 00:46:08,717  * Debugger is active!
+2025-01-05 00:46:08,718  * Debugger PIN: 860-411-997
+2025-01-05 00:47:24,269  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-05 00:47:24,304  * Restarting with stat
+2025-01-05 00:47:24,498  * Debugger is active!
+2025-01-05 00:47:24,498  * Debugger PIN: 860-411-997
+2025-01-05 00:47:25,725 127.0.0.1 - - [05/Jan/2025 00:47:25] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:47:25,949 127.0.0.1 - - [05/Jan/2025 00:47:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:25,974 127.0.0.1 - - [05/Jan/2025 00:47:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:47:25,985 127.0.0.1 - - [05/Jan/2025 00:47:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:47:26,154 127.0.0.1 - - [05/Jan/2025 00:47:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:26,321 127.0.0.1 - - [05/Jan/2025 00:47:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:26,392 127.0.0.1 - - [05/Jan/2025 00:47:26] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,198 127.0.0.1 - - [05/Jan/2025 00:47:41] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:47:41,275 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,283 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,283 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,316 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,345 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:47:41,409 127.0.0.1 - - [05/Jan/2025 00:47:41] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,264 127.0.0.1 - - [05/Jan/2025 00:48:16] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:48:16,348 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,349 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,350 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,380 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,407 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:16,474 127.0.0.1 - - [05/Jan/2025 00:48:16] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,288 127.0.0.1 - - [05/Jan/2025 00:48:17] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:48:17,394 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,396 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,396 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,427 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,457 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:17,534 127.0.0.1 - - [05/Jan/2025 00:48:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,130 127.0.0.1 - - [05/Jan/2025 00:48:18] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:48:18,216 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,217 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,218 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,251 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,282 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,379 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,841 127.0.0.1 - - [05/Jan/2025 00:48:18] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:48:18,873 127.0.0.1 - - [05/Jan/2025 00:48:18] "GET / HTTP/1.1" 200 -
+2025-01-05 00:48:18,971 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,972 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:18,983 127.0.0.1 - - [05/Jan/2025 00:48:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,014 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,049 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,140 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:48:19,140 127.0.0.1 - - [05/Jan/2025 00:48:19] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:48:19,486 127.0.0.1 - - [05/Jan/2025 00:48:19] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:48:19,576 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,577 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,577 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,608 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:19,642 127.0.0.1 - - [05/Jan/2025 00:48:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:37,598 127.0.0.1 - - [05/Jan/2025 00:48:37] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:48:37,719 127.0.0.1 - - [05/Jan/2025 00:48:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:37,720 127.0.0.1 - - [05/Jan/2025 00:48:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:48:37,720 127.0.0.1 - - [05/Jan/2025 00:48:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:37,759 127.0.0.1 - - [05/Jan/2025 00:48:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:48:37,790 127.0.0.1 - - [05/Jan/2025 00:48:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:10,729 127.0.0.1 - - [05/Jan/2025 00:49:10] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:10,826 127.0.0.1 - - [05/Jan/2025 00:49:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:10,827 127.0.0.1 - - [05/Jan/2025 00:49:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:10,828 127.0.0.1 - - [05/Jan/2025 00:49:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:10,863 127.0.0.1 - - [05/Jan/2025 00:49:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:10,895 127.0.0.1 - - [05/Jan/2025 00:49:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,087 127.0.0.1 - - [05/Jan/2025 00:49:13] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:13,201 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,203 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,204 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,248 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,283 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:13,440 127.0.0.1 - - [05/Jan/2025 00:49:13] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,237 127.0.0.1 - - [05/Jan/2025 00:49:14] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:14,391 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,393 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,393 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,507 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,605 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,796 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,843 127.0.0.1 - - [05/Jan/2025 00:49:14] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:14,968 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,969 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:14,970 127.0.0.1 - - [05/Jan/2025 00:49:14] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,067 127.0.0.1 - - [05/Jan/2025 00:49:15] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:15,193 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,194 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,194 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,195 127.0.0.1 - - [05/Jan/2025 00:49:15] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:15,430 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,433 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,433 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,504 127.0.0.1 - - [05/Jan/2025 00:49:15] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-01-05 00:49:15,580 127.0.0.1 - - [05/Jan/2025 00:49:15] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:15,583 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,798 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,799 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,800 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:15,913 127.0.0.1 - - [05/Jan/2025 00:49:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:16,093 127.0.0.1 - - [05/Jan/2025 00:49:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:16,201 127.0.0.1 - - [05/Jan/2025 00:49:16] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,081 127.0.0.1 - - [05/Jan/2025 00:49:17] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:49:17,231 127.0.0.1 - - [05/Jan/2025 00:49:17] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:49:17,319 127.0.0.1 - - [05/Jan/2025 00:49:17] "GET / HTTP/1.1" 200 -
+2025-01-05 00:49:17,482 127.0.0.1 - - [05/Jan/2025 00:49:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,484 127.0.0.1 - - [05/Jan/2025 00:49:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,484 127.0.0.1 - - [05/Jan/2025 00:49:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,687 127.0.0.1 - - [05/Jan/2025 00:49:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,844 127.0.0.1 - - [05/Jan/2025 00:49:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:17,992 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:49:17,992 127.0.0.1 - - [05/Jan/2025 00:49:17] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 00:49:18,509 127.0.0.1 - - [05/Jan/2025 00:49:18] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:18,661 127.0.0.1 - - [05/Jan/2025 00:49:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:18,663 127.0.0.1 - - [05/Jan/2025 00:49:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:18,664 127.0.0.1 - - [05/Jan/2025 00:49:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:18,849 127.0.0.1 - - [05/Jan/2025 00:49:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:18,995 127.0.0.1 - - [05/Jan/2025 00:49:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:27,416 127.0.0.1 - - [05/Jan/2025 00:49:27] "POST /signUp.html HTTP/1.1" 200 -
+2025-01-05 00:49:27,521 127.0.0.1 - - [05/Jan/2025 00:49:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:27,521 127.0.0.1 - - [05/Jan/2025 00:49:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:27,522 127.0.0.1 - - [05/Jan/2025 00:49:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:27,588 127.0.0.1 - - [05/Jan/2025 00:49:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:27,624 127.0.0.1 - - [05/Jan/2025 00:49:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:42,897 127.0.0.1 - - [05/Jan/2025 00:49:42] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-05 00:49:43,055 127.0.0.1 - - [05/Jan/2025 00:49:43] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-05 00:49:43,166 127.0.0.1 - - [05/Jan/2025 00:49:43] "GET / HTTP/1.1" 200 -
+2025-01-05 00:49:43,314 127.0.0.1 - - [05/Jan/2025 00:49:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:43,325 127.0.0.1 - - [05/Jan/2025 00:49:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:43,327 127.0.0.1 - - [05/Jan/2025 00:49:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-05 00:49:43,368 127.0.0.1 - - [05/Jan/2025 00:49:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:43,450 127.0.0.1 - - [05/Jan/2025 00:49:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-05 00:49:43,577 {"csp-report":{"document-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/","referrer":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://scaling-eureka-rr9jw645vq73pv5v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-05 00:49:43,577 127.0.0.1 - - [05/Jan/2025 00:49:43] "POST /csp_report HTTP/1.1" 200 -
+2025-01-05 01:19:54,422  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/databaseManagement.py', reloading
+2025-01-05 01:19:54,451  * Restarting with stat
+2025-01-05 01:19:54,641  * Debugger is active!
+2025-01-05 01:19:54,641  * Debugger PIN: 860-411-997
+2025-01-05 01:26:47,901  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/databaseManagement.py', reloading
+2025-01-05 01:26:47,933  * Restarting with stat
+2025-01-05 01:26:48,126  * Debugger is active!
+2025-01-05 01:26:48,127  * Debugger PIN: 860-411-997
