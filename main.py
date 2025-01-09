@@ -1,17 +1,21 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, flash
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, TextAreaField, DateTimeField, DecimalField, URLField, SubmitField
-from wtforms.validators import DataRequired, Length, Regexp, Email
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired
 from flask_wtf.csrf import CSRFProtect
 from flask_csp.csp import csp_header
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import logging
 import databaseManagement as dbHandler
-from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
-from forms import LoginForm, SignUpForm 
+from forms import LoginForm, SignUpForm
 
-# Code snippet for logging a message
-# app.logger.critical("message")
+app = Flask(__name__)
+app.secret_key = b"hSWrqNxeExuR03aq;apl"
+csrf = CSRFProtect(app)
+limiter = Limiter(get_remote_address, app=app, default_limits=["5 per minute"])
+
 app_log = logging.getLogger(__name__)
 logging.basicConfig(
     filename="security_log.log",
@@ -20,10 +24,12 @@ logging.basicConfig(
     format="%(asctime)s %(message)s",
 )
 
-# Generate a unique basic 16 key: https://acte.ltd/utils/randomkeygen
-app = Flask(__name__)
-app.secret_key = b"hSWrqNxeExuR03aq;apl"  # Secret key for CSRF protection and session management
-csrf = CSRFProtect(app)  # Initialize CSRF protection
+# Custom error handler for rate limit exceeded
+@app.errorhandler(429)
+def ratelimit_handler(e):
+    flash("Too many incorrect attempts. Please try again later.", "danger")
+    form = LoginForm()
+    return render_template("index.html", form=form, rate_limit_exceeded=True), 429
 
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
@@ -56,15 +62,20 @@ def root():
         "frame-src": "'none'",
     }
 )
+@limiter.limit("5 per minute")
 def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = dbHandler.retrieveUserByUsername(form.username.data)
         if user and check_password_hash(user['password'], form.password.data):
+            app.logger.info(f"Successful login attempt for user: {form.username.data}")
             return redirect("/form.html")
         else:
+            app.logger.warning(f"Failed login attempt for user: {form.username.data}")
             flash('Invalid username or password', 'danger')
-    return render_template("index.html", form=form)  # Render the login page with the form
+    else:
+        app.logger.warning(f"Failed login attempt with invalid form data for user: {form.username.data}")
+    return render_template("index.html", form=form, rate_limit_exceeded=False)  # Render the login page with the form
 
 # Route for the sign up page
 @app.route('/signUp.html', methods=['GET', 'POST'])

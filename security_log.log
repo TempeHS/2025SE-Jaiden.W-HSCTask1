@@ -3116,3 +3116,865 @@
 2025-01-05 01:26:47,933  * Restarting with stat
 2025-01-05 01:26:48,126  * Debugger is active!
 2025-01-05 01:26:48,127  * Debugger PIN: 860-411-997
+2025-01-09 02:58:54,068 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.212:5000
+2025-01-09 02:58:54,068 [33mPress CTRL+C to quit[0m
+2025-01-09 02:58:54,069  * Restarting with stat
+2025-01-09 02:58:54,312  * Debugger is active!
+2025-01-09 02:58:54,313  * Debugger PIN: 980-339-344
+2025-01-09 02:59:01,506 127.0.0.1 - - [09/Jan/2025 02:59:01] "GET /?vscodeBrowserReqId=1736391546373 HTTP/1.1" 200 -
+2025-01-09 02:59:02,147 127.0.0.1 - - [09/Jan/2025 02:59:02] "GET / HTTP/1.1" 200 -
+2025-01-09 02:59:02,646 127.0.0.1 - - [09/Jan/2025 02:59:02] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-01-09 02:59:02,648 127.0.0.1 - - [09/Jan/2025 02:59:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-09 02:59:02,648 127.0.0.1 - - [09/Jan/2025 02:59:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-01-09 02:59:03,144 127.0.0.1 - - [09/Jan/2025 02:59:03] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-01-09 02:59:03,192 127.0.0.1 - - [09/Jan/2025 02:59:03] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-01-09 02:59:03,359 127.0.0.1 - - [09/Jan/2025 02:59:03] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-01-09 02:59:03,360 127.0.0.1 - - [09/Jan/2025 02:59:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 02:59:03,408 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 02:59:03,408 127.0.0.1 - - [09/Jan/2025 02:59:03] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 02:59:03,491 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/css/style.css HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,493 127.0.0.1 - - [09/Jan/2025 02:59:03] "GET / HTTP/1.1" 200 -
+2025-01-09 02:59:03,499 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/icons/icon-128x128.png HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,518 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/css/style.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,519 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/icons/icon-192x192.png HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,562 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/images/logo.png HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,572 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/icons/mobile_screenshot.png HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,574 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/js/app.js HTTP/1.1[0m" 404 -
+2025-01-09 02:59:03,575 127.0.0.1 - - [09/Jan/2025 02:59:03] "[33mGET /static/js/static/images/favicon.jpg HTTP/1.1[0m" 404 -
+2025-01-09 03:29:32,313 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.212:5000
+2025-01-09 03:29:32,313 [33mPress CTRL+C to quit[0m
+2025-01-09 03:29:32,313  * Restarting with stat
+2025-01-09 03:29:32,540  * Debugger is active!
+2025-01-09 03:29:32,540  * Debugger PIN: 980-339-344
+2025-01-09 03:29:33,723 127.0.0.1 - - [09/Jan/2025 03:29:33] "GET /?vscodeBrowserReqId=1736393383032 HTTP/1.1" 200 -
+2025-01-09 03:29:46,101 127.0.0.1 - - [09/Jan/2025 03:29:46] "GET / HTTP/1.1" 200 -
+2025-01-09 03:29:46,397 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,421 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,446 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,660 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,690 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,772 127.0.0.1 - - [09/Jan/2025 03:29:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:29:46,798 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:29:46,799 127.0.0.1 - - [09/Jan/2025 03:29:46] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:29:53,866 Failed login attempt for username: sddd
+2025-01-09 03:29:53,867 127.0.0.1 - - [09/Jan/2025 03:29:53] "POST / HTTP/1.1" 200 -
+2025-01-09 03:29:53,944 127.0.0.1 - - [09/Jan/2025 03:29:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:53,947 127.0.0.1 - - [09/Jan/2025 03:29:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:53,953 127.0.0.1 - - [09/Jan/2025 03:29:53] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:53,988 127.0.0.1 - - [09/Jan/2025 03:29:53] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:54,021 127.0.0.1 - - [09/Jan/2025 03:29:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:54,120 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:29:54,120 127.0.0.1 - - [09/Jan/2025 03:29:54] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:29:57,108 Failed login attempt for username: sddd
+2025-01-09 03:29:57,109 127.0.0.1 - - [09/Jan/2025 03:29:57] "POST / HTTP/1.1" 200 -
+2025-01-09 03:29:57,206 127.0.0.1 - - [09/Jan/2025 03:29:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:57,208 127.0.0.1 - - [09/Jan/2025 03:29:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:57,211 127.0.0.1 - - [09/Jan/2025 03:29:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:57,256 127.0.0.1 - - [09/Jan/2025 03:29:57] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:57,289 127.0.0.1 - - [09/Jan/2025 03:29:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:57,403 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:29:57,404 127.0.0.1 - - [09/Jan/2025 03:29:57] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:29:59,232 Failed login attempt for username: sddd
+2025-01-09 03:29:59,233 127.0.0.1 - - [09/Jan/2025 03:29:59] "POST / HTTP/1.1" 200 -
+2025-01-09 03:29:59,315 127.0.0.1 - - [09/Jan/2025 03:29:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:59,316 127.0.0.1 - - [09/Jan/2025 03:29:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:29:59,323 127.0.0.1 - - [09/Jan/2025 03:29:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:59,356 127.0.0.1 - - [09/Jan/2025 03:29:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:59,385 127.0.0.1 - - [09/Jan/2025 03:29:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:29:59,492 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:29:59,492 127.0.0.1 - - [09/Jan/2025 03:29:59] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:30:00,857 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:00,858 127.0.0.1 - - [09/Jan/2025 03:30:00] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:00,977 127.0.0.1 - - [09/Jan/2025 03:30:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-09 03:30:05,182 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:05,183 127.0.0.1 - - [09/Jan/2025 03:30:05] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:05,792 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:05,792 127.0.0.1 - - [09/Jan/2025 03:30:05] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:05,954 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:05,955 127.0.0.1 - - [09/Jan/2025 03:30:05] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:06,103 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:06,103 127.0.0.1 - - [09/Jan/2025 03:30:06] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:06,264 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:06,265 127.0.0.1 - - [09/Jan/2025 03:30:06] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:06,386 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:06,387 127.0.0.1 - - [09/Jan/2025 03:30:06] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:06,522 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:06,522 127.0.0.1 - - [09/Jan/2025 03:30:06] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:30:07,944 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:30:07,945 127.0.0.1 - - [09/Jan/2025 03:30:07] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:36:42,827 Failed login attempt for username: sddd
+2025-01-09 03:36:42,828 127.0.0.1 - - [09/Jan/2025 03:36:42] "POST / HTTP/1.1" 200 -
+2025-01-09 03:36:43,078 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,112 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,113 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,305 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,534 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,603 127.0.0.1 - - [09/Jan/2025 03:36:43] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:36:43,666 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:36:43,666 127.0.0.1 - - [09/Jan/2025 03:36:43] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:20,595  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:38:20,635  * Restarting with stat
+2025-01-09 03:38:20,884  * Debugger is active!
+2025-01-09 03:38:20,885  * Debugger PIN: 980-339-344
+2025-01-09 03:38:32,505 Failed login attempt for username: sddd
+2025-01-09 03:38:32,514 127.0.0.1 - - [09/Jan/2025 03:38:32] "POST / HTTP/1.1" 200 -
+2025-01-09 03:38:32,749 127.0.0.1 - - [09/Jan/2025 03:38:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:32,772 127.0.0.1 - - [09/Jan/2025 03:38:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:32,793 127.0.0.1 - - [09/Jan/2025 03:38:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:32,825 127.0.0.1 - - [09/Jan/2025 03:38:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:32,991 127.0.0.1 - - [09/Jan/2025 03:38:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:33,060 127.0.0.1 - - [09/Jan/2025 03:38:33] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:38:33,127 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:38:33,128 127.0.0.1 - - [09/Jan/2025 03:38:33] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:35,066 Failed login attempt for username: sddd
+2025-01-09 03:38:35,067 127.0.0.1 - - [09/Jan/2025 03:38:35] "POST / HTTP/1.1" 200 -
+2025-01-09 03:38:35,142 127.0.0.1 - - [09/Jan/2025 03:38:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:35,149 127.0.0.1 - - [09/Jan/2025 03:38:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:35,150 127.0.0.1 - - [09/Jan/2025 03:38:35] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:35,180 127.0.0.1 - - [09/Jan/2025 03:38:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:35,211 127.0.0.1 - - [09/Jan/2025 03:38:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:35,327 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:38:35,327 127.0.0.1 - - [09/Jan/2025 03:38:35] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:37,571 Failed login attempt for username: sddd
+2025-01-09 03:38:37,572 127.0.0.1 - - [09/Jan/2025 03:38:37] "POST / HTTP/1.1" 200 -
+2025-01-09 03:38:37,665 127.0.0.1 - - [09/Jan/2025 03:38:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:37,668 127.0.0.1 - - [09/Jan/2025 03:38:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:37,672 127.0.0.1 - - [09/Jan/2025 03:38:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:37,771 127.0.0.1 - - [09/Jan/2025 03:38:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:37,803 127.0.0.1 - - [09/Jan/2025 03:38:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:37,907 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:38:37,907 127.0.0.1 - - [09/Jan/2025 03:38:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:39,110 Failed login attempt for username: sddd
+2025-01-09 03:38:39,111 127.0.0.1 - - [09/Jan/2025 03:38:39] "POST / HTTP/1.1" 200 -
+2025-01-09 03:38:39,193 127.0.0.1 - - [09/Jan/2025 03:38:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:39,197 127.0.0.1 - - [09/Jan/2025 03:38:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:39,200 127.0.0.1 - - [09/Jan/2025 03:38:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:39,233 127.0.0.1 - - [09/Jan/2025 03:38:39] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:39,268 127.0.0.1 - - [09/Jan/2025 03:38:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:39,381 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:38:39,381 127.0.0.1 - - [09/Jan/2025 03:38:39] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:40,370 Failed login attempt for username: sddd
+2025-01-09 03:38:40,370 127.0.0.1 - - [09/Jan/2025 03:38:40] "POST / HTTP/1.1" 200 -
+2025-01-09 03:38:40,481 127.0.0.1 - - [09/Jan/2025 03:38:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:40,487 127.0.0.1 - - [09/Jan/2025 03:38:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:40,495 127.0.0.1 - - [09/Jan/2025 03:38:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:38:40,531 127.0.0.1 - - [09/Jan/2025 03:38:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:40,560 127.0.0.1 - - [09/Jan/2025 03:38:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:38:40,687 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:38:40,687 127.0.0.1 - - [09/Jan/2025 03:38:40] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:38:41,833 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:38:41,833 127.0.0.1 - - [09/Jan/2025 03:38:41] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:39:57,661 Failed login attempt for username: sddd
+2025-01-09 03:39:57,662 127.0.0.1 - - [09/Jan/2025 03:39:57] "POST / HTTP/1.1" 200 -
+2025-01-09 03:39:57,748 127.0.0.1 - - [09/Jan/2025 03:39:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:39:57,759 127.0.0.1 - - [09/Jan/2025 03:39:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:39:57,900 127.0.0.1 - - [09/Jan/2025 03:39:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:39:57,934 127.0.0.1 - - [09/Jan/2025 03:39:57] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:39:57,972 127.0.0.1 - - [09/Jan/2025 03:39:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:39:58,035 127.0.0.1 - - [09/Jan/2025 03:39:58] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:39:58,097 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:39:58,098 127.0.0.1 - - [09/Jan/2025 03:39:58] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:40:38,741 Failed login attempt for username: sddd
+2025-01-09 03:40:38,743 127.0.0.1 - - [09/Jan/2025 03:40:38] "POST / HTTP/1.1" 200 -
+2025-01-09 03:40:38,876 127.0.0.1 - - [09/Jan/2025 03:40:38] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:38,877 127.0.0.1 - - [09/Jan/2025 03:40:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:38,878 127.0.0.1 - - [09/Jan/2025 03:40:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:38,917 127.0.0.1 - - [09/Jan/2025 03:40:38] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:38,951 127.0.0.1 - - [09/Jan/2025 03:40:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:39,055 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:40:39,056 127.0.0.1 - - [09/Jan/2025 03:40:39] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:40:41,277 Failed login attempt for username: sddd
+2025-01-09 03:40:41,278 127.0.0.1 - - [09/Jan/2025 03:40:41] "POST / HTTP/1.1" 200 -
+2025-01-09 03:40:41,365 127.0.0.1 - - [09/Jan/2025 03:40:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:41,365 127.0.0.1 - - [09/Jan/2025 03:40:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:41,366 127.0.0.1 - - [09/Jan/2025 03:40:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:41,401 127.0.0.1 - - [09/Jan/2025 03:40:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:41,431 127.0.0.1 - - [09/Jan/2025 03:40:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:41,536 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:40:41,536 127.0.0.1 - - [09/Jan/2025 03:40:41] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:40:42,555 Failed login attempt for username: sddd
+2025-01-09 03:40:42,556 127.0.0.1 - - [09/Jan/2025 03:40:42] "POST / HTTP/1.1" 200 -
+2025-01-09 03:40:42,653 127.0.0.1 - - [09/Jan/2025 03:40:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:42,655 127.0.0.1 - - [09/Jan/2025 03:40:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:42,656 127.0.0.1 - - [09/Jan/2025 03:40:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:42,690 127.0.0.1 - - [09/Jan/2025 03:40:42] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:42,721 127.0.0.1 - - [09/Jan/2025 03:40:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:43,049 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:40:43,050 127.0.0.1 - - [09/Jan/2025 03:40:43] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:40:43,822 Failed login attempt for username: sddd
+2025-01-09 03:40:43,823 127.0.0.1 - - [09/Jan/2025 03:40:43] "POST / HTTP/1.1" 200 -
+2025-01-09 03:40:43,909 127.0.0.1 - - [09/Jan/2025 03:40:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:43,912 127.0.0.1 - - [09/Jan/2025 03:40:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:43,912 127.0.0.1 - - [09/Jan/2025 03:40:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:40:43,947 127.0.0.1 - - [09/Jan/2025 03:40:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:43,980 127.0.0.1 - - [09/Jan/2025 03:40:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:40:44,329 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:40:44,329 127.0.0.1 - - [09/Jan/2025 03:40:44] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:40:45,230 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:45,231 127.0.0.1 - - [09/Jan/2025 03:40:45] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:50,488 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:50,489 127.0.0.1 - - [09/Jan/2025 03:40:50] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,046 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,046 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,237 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,237 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,409 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,410 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,561 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,561 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,718 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,718 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:51,868 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:51,868 127.0.0.1 - - [09/Jan/2025 03:40:51] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:52,021 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:52,022 127.0.0.1 - - [09/Jan/2025 03:40:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:52,179 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:52,179 127.0.0.1 - - [09/Jan/2025 03:40:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:52,328 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:52,329 127.0.0.1 - - [09/Jan/2025 03:40:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:52,487 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:52,488 127.0.0.1 - - [09/Jan/2025 03:40:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:40:52,636 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:40:52,637 127.0.0.1 - - [09/Jan/2025 03:40:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:41:36,622 Failed login attempt for username: sddd
+2025-01-09 03:41:36,623 127.0.0.1 - - [09/Jan/2025 03:41:36] "POST / HTTP/1.1" 200 -
+2025-01-09 03:41:36,710 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,716 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,718 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,758 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,787 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,859 127.0.0.1 - - [09/Jan/2025 03:41:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:41:36,882 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:41:36,883 127.0.0.1 - - [09/Jan/2025 03:41:36] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:44:58,164  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:44:58,199  * Restarting with stat
+2025-01-09 03:44:58,430  * Debugger is active!
+2025-01-09 03:44:58,430  * Debugger PIN: 980-339-344
+2025-01-09 03:45:12,433  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:45:12,471  * Restarting with stat
+2025-01-09 03:45:12,712  * Debugger is active!
+2025-01-09 03:45:12,713  * Debugger PIN: 980-339-344
+2025-01-09 03:45:13,327 Failed login attempt for username: sddd
+2025-01-09 03:45:13,336 127.0.0.1 - - [09/Jan/2025 03:45:13] "POST / HTTP/1.1" 200 -
+2025-01-09 03:45:13,638 127.0.0.1 - - [09/Jan/2025 03:45:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:13,649 127.0.0.1 - - [09/Jan/2025 03:45:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:13,662 127.0.0.1 - - [09/Jan/2025 03:45:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:13,872 127.0.0.1 - - [09/Jan/2025 03:45:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:14,050 127.0.0.1 - - [09/Jan/2025 03:45:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:14,120 127.0.0.1 - - [09/Jan/2025 03:45:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:45:14,179 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:45:14,180 127.0.0.1 - - [09/Jan/2025 03:45:14] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:45:15,270 Failed login attempt for username: sddd
+2025-01-09 03:45:15,272 127.0.0.1 - - [09/Jan/2025 03:45:15] "POST / HTTP/1.1" 200 -
+2025-01-09 03:45:15,364 127.0.0.1 - - [09/Jan/2025 03:45:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:15,371 127.0.0.1 - - [09/Jan/2025 03:45:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:15,371 127.0.0.1 - - [09/Jan/2025 03:45:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:15,408 127.0.0.1 - - [09/Jan/2025 03:45:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:15,439 127.0.0.1 - - [09/Jan/2025 03:45:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:15,546 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:45:15,546 127.0.0.1 - - [09/Jan/2025 03:45:15] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:45:16,419 Failed login attempt for username: sddd
+2025-01-09 03:45:16,420 127.0.0.1 - - [09/Jan/2025 03:45:16] "POST / HTTP/1.1" 200 -
+2025-01-09 03:45:16,509 127.0.0.1 - - [09/Jan/2025 03:45:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:16,515 127.0.0.1 - - [09/Jan/2025 03:45:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:16,516 127.0.0.1 - - [09/Jan/2025 03:45:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:16,563 127.0.0.1 - - [09/Jan/2025 03:45:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:16,597 127.0.0.1 - - [09/Jan/2025 03:45:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:16,706 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:45:16,706 127.0.0.1 - - [09/Jan/2025 03:45:16] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:45:17,595 Failed login attempt for username: sddd
+2025-01-09 03:45:17,596 127.0.0.1 - - [09/Jan/2025 03:45:17] "POST / HTTP/1.1" 200 -
+2025-01-09 03:45:17,676 127.0.0.1 - - [09/Jan/2025 03:45:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:17,681 127.0.0.1 - - [09/Jan/2025 03:45:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:17,681 127.0.0.1 - - [09/Jan/2025 03:45:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:17,720 127.0.0.1 - - [09/Jan/2025 03:45:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:17,755 127.0.0.1 - - [09/Jan/2025 03:45:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:17,913 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:45:17,913 127.0.0.1 - - [09/Jan/2025 03:45:17] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:45:18,741 Failed login attempt for username: sddd
+2025-01-09 03:45:18,742 127.0.0.1 - - [09/Jan/2025 03:45:18] "POST / HTTP/1.1" 200 -
+2025-01-09 03:45:18,839 127.0.0.1 - - [09/Jan/2025 03:45:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:18,843 127.0.0.1 - - [09/Jan/2025 03:45:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:18,845 127.0.0.1 - - [09/Jan/2025 03:45:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:18,881 127.0.0.1 - - [09/Jan/2025 03:45:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:18,913 127.0.0.1 - - [09/Jan/2025 03:45:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:19,042 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:45:19,043 127.0.0.1 - - [09/Jan/2025 03:45:19] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:45:20,109 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:45:20,110 127.0.0.1 - - [09/Jan/2025 03:45:20] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:45:20,197 127.0.0.1 - - [09/Jan/2025 03:45:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:20,199 127.0.0.1 - - [09/Jan/2025 03:45:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:20,199 127.0.0.1 - - [09/Jan/2025 03:45:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:20,235 127.0.0.1 - - [09/Jan/2025 03:45:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:20,274 127.0.0.1 - - [09/Jan/2025 03:45:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:24,280 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:45:24,281 127.0.0.1 - - [09/Jan/2025 03:45:24] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:45:24,367 127.0.0.1 - - [09/Jan/2025 03:45:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:24,377 127.0.0.1 - - [09/Jan/2025 03:45:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:24,377 127.0.0.1 - - [09/Jan/2025 03:45:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:24,415 127.0.0.1 - - [09/Jan/2025 03:45:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:24,442 127.0.0.1 - - [09/Jan/2025 03:45:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:26,245 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:45:26,246 127.0.0.1 - - [09/Jan/2025 03:45:26] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:45:26,320 127.0.0.1 - - [09/Jan/2025 03:45:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:26,327 127.0.0.1 - - [09/Jan/2025 03:45:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:26,329 127.0.0.1 - - [09/Jan/2025 03:45:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:45:26,363 127.0.0.1 - - [09/Jan/2025 03:45:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:45:26,397 127.0.0.1 - - [09/Jan/2025 03:45:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:51:52,810  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:51:52,852  * Restarting with stat
+2025-01-09 03:51:53,085  * Debugger is active!
+2025-01-09 03:51:53,086  * Debugger PIN: 980-339-344
+2025-01-09 03:52:12,273 Failed login attempt for username: sddd
+2025-01-09 03:52:12,282 127.0.0.1 - - [09/Jan/2025 03:52:12] "POST / HTTP/1.1" 200 -
+2025-01-09 03:52:12,580 127.0.0.1 - - [09/Jan/2025 03:52:12] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:12,586 127.0.0.1 - - [09/Jan/2025 03:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:12,586 127.0.0.1 - - [09/Jan/2025 03:52:12] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:12,762 127.0.0.1 - - [09/Jan/2025 03:52:12] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:12,952 127.0.0.1 - - [09/Jan/2025 03:52:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:13,028 127.0.0.1 - - [09/Jan/2025 03:52:13] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:52:13,085 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:52:13,085 127.0.0.1 - - [09/Jan/2025 03:52:13] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:52:16,665 127.0.0.1 - - [09/Jan/2025 03:52:16] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 03:52:16,697 127.0.0.1 - - [09/Jan/2025 03:52:16] "GET / HTTP/1.1" 200 -
+2025-01-09 03:52:16,788 127.0.0.1 - - [09/Jan/2025 03:52:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:16,798 127.0.0.1 - - [09/Jan/2025 03:52:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:16,800 127.0.0.1 - - [09/Jan/2025 03:52:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:16,834 127.0.0.1 - - [09/Jan/2025 03:52:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:16,873 127.0.0.1 - - [09/Jan/2025 03:52:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:16,975 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:52:16,975 127.0.0.1 - - [09/Jan/2025 03:52:16] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:52:20,335 127.0.0.1 - - [09/Jan/2025 03:52:20] "GET / HTTP/1.1" 200 -
+2025-01-09 03:52:20,415 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,418 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,419 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,456 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,485 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,547 127.0.0.1 - - [09/Jan/2025 03:52:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:52:20,589 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:52:20,589 127.0.0.1 - - [09/Jan/2025 03:52:20] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:52:28,518 127.0.0.1 - - [09/Jan/2025 03:52:28] "GET / HTTP/1.1" 200 -
+2025-01-09 03:52:28,592 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,599 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,600 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,636 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,678 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,680 127.0.0.1 - - [09/Jan/2025 03:52:28] "GET / HTTP/1.1" 200 -
+2025-01-09 03:52:28,784 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,784 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,785 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,816 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,830 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:52:28,833 127.0.0.1 - - [09/Jan/2025 03:52:28] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:52:28,847 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,917 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,918 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,919 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,953 127.0.0.1 - - [09/Jan/2025 03:52:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:28,986 127.0.0.1 - - [09/Jan/2025 03:52:28] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-01-09 03:52:28,990 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:52:28,991 127.0.0.1 - - [09/Jan/2025 03:52:28] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:52:29,141 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,142 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,143 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,143 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,147 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:52:29,149 127.0.0.1 - - [09/Jan/2025 03:52:29] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:52:29,231 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,237 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,238 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,282 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:52:29,284 127.0.0.1 - - [09/Jan/2025 03:52:29] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:52:29,285 127.0.0.1 - - [09/Jan/2025 03:52:29] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-01-09 03:52:29,377 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,379 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,517 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,551 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,573 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:52:29,574 127.0.0.1 - - [09/Jan/2025 03:52:29] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:52:29,583 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,650 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,654 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,656 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,694 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:52:29,721 127.0.0.1 - - [09/Jan/2025 03:52:29] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-01-09 03:52:29,789 127.0.0.1 - - [09/Jan/2025 03:52:29] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:53:55,797  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:53:55,832  * Restarting with stat
+2025-01-09 03:53:56,070  * Debugger is active!
+2025-01-09 03:53:56,070  * Debugger PIN: 980-339-344
+2025-01-09 03:54:05,532 127.0.0.1 - - [09/Jan/2025 03:54:05] "GET / HTTP/1.1" 200 -
+2025-01-09 03:54:05,618 127.0.0.1 - - [09/Jan/2025 03:54:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:54:05,619 127.0.0.1 - - [09/Jan/2025 03:54:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:54:05,783 127.0.0.1 - - [09/Jan/2025 03:54:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:54:06,004 127.0.0.1 - - [09/Jan/2025 03:54:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:54:06,524 127.0.0.1 - - [09/Jan/2025 03:54:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:54:06,835 127.0.0.1 - - [09/Jan/2025 03:54:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:54:06,896 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:54:06,897 127.0.0.1 - - [09/Jan/2025 03:54:06] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:55:11,876 127.0.0.1 - - [09/Jan/2025 03:55:11] "GET / HTTP/1.1" 200 -
+2025-01-09 03:55:11,980 127.0.0.1 - - [09/Jan/2025 03:55:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:55:11,980 127.0.0.1 - - [09/Jan/2025 03:55:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:55:11,981 127.0.0.1 - - [09/Jan/2025 03:55:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:55:12,014 127.0.0.1 - - [09/Jan/2025 03:55:12] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:55:12,042 127.0.0.1 - - [09/Jan/2025 03:55:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:55:12,123 127.0.0.1 - - [09/Jan/2025 03:55:12] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:55:12,155 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:55:12,155 127.0.0.1 - - [09/Jan/2025 03:55:12] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:56:13,517  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:56:13,556  * Restarting with stat
+2025-01-09 03:56:31,019 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.212:5000
+2025-01-09 03:56:31,019 [33mPress CTRL+C to quit[0m
+2025-01-09 03:56:31,020  * Restarting with stat
+2025-01-09 03:56:31,257  * Debugger is active!
+2025-01-09 03:56:31,257  * Debugger PIN: 980-339-344
+2025-01-09 03:56:31,984 127.0.0.1 - - [09/Jan/2025 03:56:31] "GET /?vscodeBrowserReqId=1736395001481 HTTP/1.1" 200 -
+2025-01-09 03:56:33,285 127.0.0.1 - - [09/Jan/2025 03:56:33] "GET / HTTP/1.1" 200 -
+2025-01-09 03:56:33,394 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,561 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,567 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,751 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,781 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,854 127.0.0.1 - - [09/Jan/2025 03:56:33] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:56:33,882 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:56:33,883 127.0.0.1 - - [09/Jan/2025 03:56:33] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:56:37,293 Failed login attempt for username: user
+2025-01-09 03:56:37,294 127.0.0.1 - - [09/Jan/2025 03:56:37] "POST / HTTP/1.1" 200 -
+2025-01-09 03:56:37,384 127.0.0.1 - - [09/Jan/2025 03:56:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:37,384 127.0.0.1 - - [09/Jan/2025 03:56:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:37,385 127.0.0.1 - - [09/Jan/2025 03:56:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:37,424 127.0.0.1 - - [09/Jan/2025 03:56:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:37,467 127.0.0.1 - - [09/Jan/2025 03:56:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:37,573 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:56:37,573 127.0.0.1 - - [09/Jan/2025 03:56:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:56:38,976 Failed login attempt for username: user
+2025-01-09 03:56:38,977 127.0.0.1 - - [09/Jan/2025 03:56:38] "POST / HTTP/1.1" 200 -
+2025-01-09 03:56:39,079 127.0.0.1 - - [09/Jan/2025 03:56:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:39,082 127.0.0.1 - - [09/Jan/2025 03:56:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:39,083 127.0.0.1 - - [09/Jan/2025 03:56:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:39,121 127.0.0.1 - - [09/Jan/2025 03:56:39] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:39,153 127.0.0.1 - - [09/Jan/2025 03:56:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:39,263 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:56:39,263 127.0.0.1 - - [09/Jan/2025 03:56:39] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:56:40,327 Failed login attempt for username: user
+2025-01-09 03:56:40,328 127.0.0.1 - - [09/Jan/2025 03:56:40] "POST / HTTP/1.1" 200 -
+2025-01-09 03:56:40,412 127.0.0.1 - - [09/Jan/2025 03:56:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:40,417 127.0.0.1 - - [09/Jan/2025 03:56:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:40,418 127.0.0.1 - - [09/Jan/2025 03:56:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:40,447 127.0.0.1 - - [09/Jan/2025 03:56:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:40,474 127.0.0.1 - - [09/Jan/2025 03:56:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:40,568 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:56:40,569 127.0.0.1 - - [09/Jan/2025 03:56:40] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:56:41,618 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:56:41,620 127.0.0.1 - - [09/Jan/2025 03:56:41] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:56:41,713 127.0.0.1 - - [09/Jan/2025 03:56:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:41,720 127.0.0.1 - - [09/Jan/2025 03:56:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:41,721 127.0.0.1 - - [09/Jan/2025 03:56:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:41,755 127.0.0.1 - - [09/Jan/2025 03:56:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:41,781 127.0.0.1 - - [09/Jan/2025 03:56:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,636 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:56:44,637 127.0.0.1 - - [09/Jan/2025 03:56:44] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:56:44,714 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,719 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,721 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,749 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,777 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:44,841 127.0.0.1 - - [09/Jan/2025 03:56:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,317 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:56:48,319 127.0.0.1 - - [09/Jan/2025 03:56:48] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:56:48,396 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,401 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,403 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,430 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,461 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:56:48,530 127.0.0.1 - - [09/Jan/2025 03:56:48] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,203 Failed login attempt for username: user
+2025-01-09 03:58:03,204 127.0.0.1 - - [09/Jan/2025 03:58:03] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:03,285 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,297 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,299 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,331 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,360 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,429 127.0.0.1 - - [09/Jan/2025 03:58:03] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:03,522 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:03,522 127.0.0.1 - - [09/Jan/2025 03:58:03] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:25,049  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 03:58:25,090  * Restarting with stat
+2025-01-09 03:58:25,331  * Debugger is active!
+2025-01-09 03:58:25,331  * Debugger PIN: 980-339-344
+2025-01-09 03:58:37,226 127.0.0.1 - - [09/Jan/2025 03:58:37] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:37,320 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,321 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,321 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,359 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,387 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,469 127.0.0.1 - - [09/Jan/2025 03:58:37] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:37,504 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:37,504 127.0.0.1 - - [09/Jan/2025 03:58:37] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:41,079 127.0.0.1 - - [09/Jan/2025 03:58:41] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:41,160 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,161 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,162 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,196 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,234 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,308 127.0.0.1 - - [09/Jan/2025 03:58:41] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:41,345 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:41,346 127.0.0.1 - - [09/Jan/2025 03:58:41] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:44,147 127.0.0.1 - - [09/Jan/2025 03:58:44] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:44,231 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,233 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,234 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,265 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,294 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,362 127.0.0.1 - - [09/Jan/2025 03:58:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:44,398 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:44,399 127.0.0.1 - - [09/Jan/2025 03:58:44] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:45,227 127.0.0.1 - - [09/Jan/2025 03:58:45] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:45,307 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,308 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,309 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,341 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,370 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,435 127.0.0.1 - - [09/Jan/2025 03:58:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:45,503 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:45,503 127.0.0.1 - - [09/Jan/2025 03:58:45] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:50,152 127.0.0.1 - - [09/Jan/2025 03:58:50] "POST / HTTP/1.1" 200 -
+2025-01-09 03:58:50,238 127.0.0.1 - - [09/Jan/2025 03:58:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:50,240 127.0.0.1 - - [09/Jan/2025 03:58:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:50,241 127.0.0.1 - - [09/Jan/2025 03:58:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:50,275 127.0.0.1 - - [09/Jan/2025 03:58:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:50,304 127.0.0.1 - - [09/Jan/2025 03:58:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:50,397 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 03:58:50,398 127.0.0.1 - - [09/Jan/2025 03:58:50] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 03:58:52,432 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:58:52,433 127.0.0.1 - - [09/Jan/2025 03:58:52] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:58:52,521 127.0.0.1 - - [09/Jan/2025 03:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:52,527 127.0.0.1 - - [09/Jan/2025 03:58:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:52,529 127.0.0.1 - - [09/Jan/2025 03:58:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:52,558 127.0.0.1 - - [09/Jan/2025 03:58:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:52,587 127.0.0.1 - - [09/Jan/2025 03:58:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:57,960 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:58:57,962 127.0.0.1 - - [09/Jan/2025 03:58:57] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:58:58,044 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,052 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,052 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,087 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,118 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,193 127.0.0.1 - - [09/Jan/2025 03:58:58] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:58,978 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:58:58,980 127.0.0.1 - - [09/Jan/2025 03:58:58] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:58:59,062 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,063 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,065 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,095 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,135 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:58:59,136 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,137 127.0.0.1 - - [09/Jan/2025 03:58:59] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:58:59,220 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,225 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,227 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,264 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,296 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,368 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,899 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:58:59,900 127.0.0.1 - - [09/Jan/2025 03:58:59] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:58:59,972 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,977 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:58:59,979 127.0.0.1 - - [09/Jan/2025 03:58:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,007 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,037 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,051 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:59:00,053 127.0.0.1 - - [09/Jan/2025 03:59:00] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:59:00,141 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,148 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,149 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,176 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,205 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,323 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:59:00,324 127.0.0.1 - - [09/Jan/2025 03:59:00] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 03:59:00,403 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,405 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,405 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,433 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,464 127.0.0.1 - - [09/Jan/2025 03:59:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:00,538 127.0.0.1 - - [09/Jan/2025 03:59:00] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-01-09 03:59:06,453 127.0.0.1 - - [09/Jan/2025 03:59:06] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 03:59:06,490 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 03:59:06,491 127.0.0.1 - - [09/Jan/2025 03:59:06] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 03:59:06,568 127.0.0.1 - - [09/Jan/2025 03:59:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:06,575 127.0.0.1 - - [09/Jan/2025 03:59:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:06,575 127.0.0.1 - - [09/Jan/2025 03:59:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 03:59:06,608 127.0.0.1 - - [09/Jan/2025 03:59:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 03:59:06,641 127.0.0.1 - - [09/Jan/2025 03:59:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:01:04,699 127.0.0.1 - - [09/Jan/2025 04:01:04] "GET / HTTP/1.1" 200 -
+2025-01-09 04:01:04,925 127.0.0.1 - - [09/Jan/2025 04:01:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:01:04,957 127.0.0.1 - - [09/Jan/2025 04:01:04] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:01:04,969 127.0.0.1 - - [09/Jan/2025 04:01:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:01:05,160 127.0.0.1 - - [09/Jan/2025 04:01:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:01:05,340 127.0.0.1 - - [09/Jan/2025 04:01:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:01:05,405 127.0.0.1 - - [09/Jan/2025 04:01:05] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 04:01:05,474 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:01:05,475 127.0.0.1 - - [09/Jan/2025 04:01:05] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:20:08,437  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 04:20:08,489  * Restarting with stat
+2025-01-09 04:20:08,738  * Debugger is active!
+2025-01-09 04:20:08,738  * Debugger PIN: 980-339-344
+2025-01-09 04:20:22,170 Failed login attempt for user: dfgf
+2025-01-09 04:20:22,179 127.0.0.1 - - [09/Jan/2025 04:20:22] "POST / HTTP/1.1" 200 -
+2025-01-09 04:20:22,452 127.0.0.1 - - [09/Jan/2025 04:20:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:20:22,479 127.0.0.1 - - [09/Jan/2025 04:20:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:20:22,487 127.0.0.1 - - [09/Jan/2025 04:20:22] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:20:22,669 127.0.0.1 - - [09/Jan/2025 04:20:22] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:20:22,877 127.0.0.1 - - [09/Jan/2025 04:20:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:20:23,030 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:20:23,030 127.0.0.1 - - [09/Jan/2025 04:20:23] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:17,984 Failed login attempt for user: dfgf
+2025-01-09 04:21:17,985 127.0.0.1 - - [09/Jan/2025 04:21:17] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:18,086 127.0.0.1 - - [09/Jan/2025 04:21:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:18,089 127.0.0.1 - - [09/Jan/2025 04:21:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:18,089 127.0.0.1 - - [09/Jan/2025 04:21:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:18,139 127.0.0.1 - - [09/Jan/2025 04:21:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:18,172 127.0.0.1 - - [09/Jan/2025 04:21:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:18,293 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:18,294 127.0.0.1 - - [09/Jan/2025 04:21:18] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:19,745 Failed login attempt for user: dfgf
+2025-01-09 04:21:19,746 127.0.0.1 - - [09/Jan/2025 04:21:19] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:19,837 127.0.0.1 - - [09/Jan/2025 04:21:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:19,839 127.0.0.1 - - [09/Jan/2025 04:21:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:19,840 127.0.0.1 - - [09/Jan/2025 04:21:19] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:19,875 127.0.0.1 - - [09/Jan/2025 04:21:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:19,904 127.0.0.1 - - [09/Jan/2025 04:21:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:20,026 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:20,027 127.0.0.1 - - [09/Jan/2025 04:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:21,404 Failed login attempt for user: dfgf
+2025-01-09 04:21:21,405 127.0.0.1 - - [09/Jan/2025 04:21:21] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:21,513 127.0.0.1 - - [09/Jan/2025 04:21:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:21,514 127.0.0.1 - - [09/Jan/2025 04:21:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:21,515 127.0.0.1 - - [09/Jan/2025 04:21:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:21,553 127.0.0.1 - - [09/Jan/2025 04:21:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:21,583 127.0.0.1 - - [09/Jan/2025 04:21:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:21,707 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:21,707 127.0.0.1 - - [09/Jan/2025 04:21:21] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:23,044 Failed login attempt for user: dfgf
+2025-01-09 04:21:23,046 127.0.0.1 - - [09/Jan/2025 04:21:23] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:23,140 127.0.0.1 - - [09/Jan/2025 04:21:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:23,140 127.0.0.1 - - [09/Jan/2025 04:21:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:23,143 127.0.0.1 - - [09/Jan/2025 04:21:23] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:23,178 127.0.0.1 - - [09/Jan/2025 04:21:23] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:23,211 127.0.0.1 - - [09/Jan/2025 04:21:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:23,324 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:23,324 127.0.0.1 - - [09/Jan/2025 04:21:23] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:24,998 Failed login attempt for user: dfgf
+2025-01-09 04:21:24,999 127.0.0.1 - - [09/Jan/2025 04:21:24] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:25,089 127.0.0.1 - - [09/Jan/2025 04:21:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:25,097 127.0.0.1 - - [09/Jan/2025 04:21:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:25,099 127.0.0.1 - - [09/Jan/2025 04:21:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:25,131 127.0.0.1 - - [09/Jan/2025 04:21:25] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:25,164 127.0.0.1 - - [09/Jan/2025 04:21:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:25,307 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:25,308 127.0.0.1 - - [09/Jan/2025 04:21:25] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:26,821 Failed login attempt for user: dfgf
+2025-01-09 04:21:26,822 127.0.0.1 - - [09/Jan/2025 04:21:26] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:26,910 127.0.0.1 - - [09/Jan/2025 04:21:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:26,911 127.0.0.1 - - [09/Jan/2025 04:21:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:26,911 127.0.0.1 - - [09/Jan/2025 04:21:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:26,958 127.0.0.1 - - [09/Jan/2025 04:21:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:26,994 127.0.0.1 - - [09/Jan/2025 04:21:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:27,101 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:27,102 127.0.0.1 - - [09/Jan/2025 04:21:27] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:28,615 Failed login attempt for user: dfgf
+2025-01-09 04:21:28,616 127.0.0.1 - - [09/Jan/2025 04:21:28] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:28,732 127.0.0.1 - - [09/Jan/2025 04:21:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:28,742 127.0.0.1 - - [09/Jan/2025 04:21:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:28,745 127.0.0.1 - - [09/Jan/2025 04:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:28,791 127.0.0.1 - - [09/Jan/2025 04:21:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:28,826 127.0.0.1 - - [09/Jan/2025 04:21:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:28,921 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:28,922 127.0.0.1 - - [09/Jan/2025 04:21:28] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:30,503 Failed login attempt for user: dfgf
+2025-01-09 04:21:30,504 127.0.0.1 - - [09/Jan/2025 04:21:30] "POST / HTTP/1.1" 200 -
+2025-01-09 04:21:30,593 127.0.0.1 - - [09/Jan/2025 04:21:30] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:30,593 127.0.0.1 - - [09/Jan/2025 04:21:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:30,595 127.0.0.1 - - [09/Jan/2025 04:21:30] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:30,635 127.0.0.1 - - [09/Jan/2025 04:21:30] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:30,664 127.0.0.1 - - [09/Jan/2025 04:21:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:30,771 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:21:30,771 127.0.0.1 - - [09/Jan/2025 04:21:30] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:21:32,364 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 04:21:32,365 127.0.0.1 - - [09/Jan/2025 04:21:32] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 04:21:32,464 127.0.0.1 - - [09/Jan/2025 04:21:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:32,464 127.0.0.1 - - [09/Jan/2025 04:21:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:32,465 127.0.0.1 - - [09/Jan/2025 04:21:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:21:32,496 127.0.0.1 - - [09/Jan/2025 04:21:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:21:32,538 127.0.0.1 - - [09/Jan/2025 04:21:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,191 Failed login attempt for user: dfgf
+2025-01-09 04:23:35,192 127.0.0.1 - - [09/Jan/2025 04:23:35] "POST / HTTP/1.1" 200 -
+2025-01-09 04:23:35,445 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,465 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,483 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,661 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,845 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,920 127.0.0.1 - - [09/Jan/2025 04:23:35] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 04:23:35,980 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:23:35,980 127.0.0.1 - - [09/Jan/2025 04:23:35] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:23:44,838 Failed login attempt for user: fghgh
+2025-01-09 04:23:44,839 127.0.0.1 - - [09/Jan/2025 04:23:44] "POST / HTTP/1.1" 200 -
+2025-01-09 04:23:44,917 127.0.0.1 - - [09/Jan/2025 04:23:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:44,924 127.0.0.1 - - [09/Jan/2025 04:23:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:44,924 127.0.0.1 - - [09/Jan/2025 04:23:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:44,971 127.0.0.1 - - [09/Jan/2025 04:23:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:45,003 127.0.0.1 - - [09/Jan/2025 04:23:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:45,109 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:23:45,109 127.0.0.1 - - [09/Jan/2025 04:23:45] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:23:47,460 Failed login attempt for user: fghgh
+2025-01-09 04:23:47,461 127.0.0.1 - - [09/Jan/2025 04:23:47] "POST / HTTP/1.1" 200 -
+2025-01-09 04:23:47,532 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,541 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,542 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,574 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,605 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,677 127.0.0.1 - - [09/Jan/2025 04:23:47] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 04:23:47,712 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:23:47,712 127.0.0.1 - - [09/Jan/2025 04:23:47] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:23:48,318 127.0.0.1 - - [09/Jan/2025 04:23:48] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 04:23:48,356 Failed login attempt with invalid form data for user: None
+2025-01-09 04:23:48,357 127.0.0.1 - - [09/Jan/2025 04:23:48] "GET / HTTP/1.1" 200 -
+2025-01-09 04:23:48,449 127.0.0.1 - - [09/Jan/2025 04:23:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:48,453 127.0.0.1 - - [09/Jan/2025 04:23:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:48,455 127.0.0.1 - - [09/Jan/2025 04:23:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:48,490 127.0.0.1 - - [09/Jan/2025 04:23:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:48,521 127.0.0.1 - - [09/Jan/2025 04:23:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:48,624 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:23:48,624 127.0.0.1 - - [09/Jan/2025 04:23:48] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:23:50,575 127.0.0.1 - - [09/Jan/2025 04:23:50] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 04:23:50,605 Failed login attempt with invalid form data for user: None
+2025-01-09 04:23:50,606 127.0.0.1 - - [09/Jan/2025 04:23:50] "GET / HTTP/1.1" 200 -
+2025-01-09 04:23:50,687 127.0.0.1 - - [09/Jan/2025 04:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:50,692 127.0.0.1 - - [09/Jan/2025 04:23:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:23:50,694 127.0.0.1 - - [09/Jan/2025 04:23:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:50,744 127.0.0.1 - - [09/Jan/2025 04:23:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:50,777 127.0.0.1 - - [09/Jan/2025 04:23:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:23:50,913 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:23:50,913 127.0.0.1 - - [09/Jan/2025 04:23:50] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:25:01,157 Failed login attempt for user: user
+2025-01-09 04:25:01,158 127.0.0.1 - - [09/Jan/2025 04:25:01] "POST / HTTP/1.1" 200 -
+2025-01-09 04:25:01,262 127.0.0.1 - - [09/Jan/2025 04:25:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:01,264 127.0.0.1 - - [09/Jan/2025 04:25:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:01,395 127.0.0.1 - - [09/Jan/2025 04:25:01] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:01,424 127.0.0.1 - - [09/Jan/2025 04:25:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:01,454 127.0.0.1 - - [09/Jan/2025 04:25:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:01,545 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:25:01,545 127.0.0.1 - - [09/Jan/2025 04:25:01] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:25:09,730 127.0.0.1 - - [09/Jan/2025 04:25:09] "GET /signUp.html HTTP/1.1" 200 -
+2025-01-09 04:25:09,815 127.0.0.1 - - [09/Jan/2025 04:25:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:09,816 127.0.0.1 - - [09/Jan/2025 04:25:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:09,818 127.0.0.1 - - [09/Jan/2025 04:25:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:09,851 127.0.0.1 - - [09/Jan/2025 04:25:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:09,882 127.0.0.1 - - [09/Jan/2025 04:25:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:48,958 127.0.0.1 - - [09/Jan/2025 04:25:48] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-01-09 04:25:48,995 127.0.0.1 - - [09/Jan/2025 04:25:48] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 04:25:49,031 Failed login attempt with invalid form data for user: None
+2025-01-09 04:25:49,032 127.0.0.1 - - [09/Jan/2025 04:25:49] "GET / HTTP/1.1" 200 -
+2025-01-09 04:25:49,141 127.0.0.1 - - [09/Jan/2025 04:25:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:49,145 127.0.0.1 - - [09/Jan/2025 04:25:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:49,156 127.0.0.1 - - [09/Jan/2025 04:25:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:49,188 127.0.0.1 - - [09/Jan/2025 04:25:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:49,232 127.0.0.1 - - [09/Jan/2025 04:25:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:49,324 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/signUp.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:25:49,324 127.0.0.1 - - [09/Jan/2025 04:25:49] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:25:55,440 Successful login attempt for user: test
+2025-01-09 04:25:55,441 127.0.0.1 - - [09/Jan/2025 04:25:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-01-09 04:25:55,473 127.0.0.1 - - [09/Jan/2025 04:25:55] "GET /form.html HTTP/1.1" 200 -
+2025-01-09 04:25:55,553 127.0.0.1 - - [09/Jan/2025 04:25:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:55,561 127.0.0.1 - - [09/Jan/2025 04:25:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:25:55,570 127.0.0.1 - - [09/Jan/2025 04:25:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:55,604 127.0.0.1 - - [09/Jan/2025 04:25:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:25:55,637 127.0.0.1 - - [09/Jan/2025 04:25:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:29:41,914  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 04:29:41,952  * Restarting with stat
+2025-01-09 04:29:42,192  * Debugger is active!
+2025-01-09 04:29:42,192  * Debugger PIN: 980-339-344
+2025-01-09 04:32:54,909 127.0.0.1 - - [09/Jan/2025 04:32:54] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 04:32:55,088 Failed login attempt with invalid form data for user: None
+2025-01-09 04:32:55,097 127.0.0.1 - - [09/Jan/2025 04:32:55] "GET / HTTP/1.1" 200 -
+2025-01-09 04:32:55,381 127.0.0.1 - - [09/Jan/2025 04:32:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:32:55,413 127.0.0.1 - - [09/Jan/2025 04:32:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:32:55,420 127.0.0.1 - - [09/Jan/2025 04:32:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:32:55,591 127.0.0.1 - - [09/Jan/2025 04:32:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:32:55,622 127.0.0.1 - - [09/Jan/2025 04:32:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:32:55,778 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/form.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:32:55,778 127.0.0.1 - - [09/Jan/2025 04:32:55] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:33:19,329 Failed login attempt for user: fghfghfgh
+2025-01-09 04:33:19,330 127.0.0.1 - - [09/Jan/2025 04:33:19] "POST / HTTP/1.1" 200 -
+2025-01-09 04:33:19,409 127.0.0.1 - - [09/Jan/2025 04:33:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:19,417 127.0.0.1 - - [09/Jan/2025 04:33:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:19,418 127.0.0.1 - - [09/Jan/2025 04:33:19] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:19,458 127.0.0.1 - - [09/Jan/2025 04:33:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:19,488 127.0.0.1 - - [09/Jan/2025 04:33:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:19,597 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:33:19,597 127.0.0.1 - - [09/Jan/2025 04:33:19] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:33:21,342 Failed login attempt for user: fghfghfgh
+2025-01-09 04:33:21,343 127.0.0.1 - - [09/Jan/2025 04:33:21] "POST / HTTP/1.1" 200 -
+2025-01-09 04:33:21,432 127.0.0.1 - - [09/Jan/2025 04:33:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:21,441 127.0.0.1 - - [09/Jan/2025 04:33:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:21,441 127.0.0.1 - - [09/Jan/2025 04:33:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:21,474 127.0.0.1 - - [09/Jan/2025 04:33:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:21,504 127.0.0.1 - - [09/Jan/2025 04:33:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:21,610 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:33:21,611 127.0.0.1 - - [09/Jan/2025 04:33:21] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:33:23,012 Failed login attempt for user: fghfghfgh
+2025-01-09 04:33:23,013 127.0.0.1 - - [09/Jan/2025 04:33:23] "POST / HTTP/1.1" 200 -
+2025-01-09 04:33:23,097 127.0.0.1 - - [09/Jan/2025 04:33:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:23,099 127.0.0.1 - - [09/Jan/2025 04:33:23] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:23,100 127.0.0.1 - - [09/Jan/2025 04:33:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:23,138 127.0.0.1 - - [09/Jan/2025 04:33:23] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:23,167 127.0.0.1 - - [09/Jan/2025 04:33:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:23,282 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:33:23,283 127.0.0.1 - - [09/Jan/2025 04:33:23] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:33:24,592 Failed login attempt for user: fghfghfgh
+2025-01-09 04:33:24,593 127.0.0.1 - - [09/Jan/2025 04:33:24] "POST / HTTP/1.1" 200 -
+2025-01-09 04:33:24,691 127.0.0.1 - - [09/Jan/2025 04:33:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:24,693 127.0.0.1 - - [09/Jan/2025 04:33:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:24,696 127.0.0.1 - - [09/Jan/2025 04:33:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:24,727 127.0.0.1 - - [09/Jan/2025 04:33:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:24,761 127.0.0.1 - - [09/Jan/2025 04:33:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:24,880 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:33:24,880 127.0.0.1 - - [09/Jan/2025 04:33:24] "POST /csp_report HTTP/1.1" 200 -
+2025-01-09 04:33:25,752 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 04:33:25,753 127.0.0.1 - - [09/Jan/2025 04:33:25] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+2025-01-09 04:33:25,848 127.0.0.1 - - [09/Jan/2025 04:33:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:25,848 127.0.0.1 - - [09/Jan/2025 04:33:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:25,849 127.0.0.1 - - [09/Jan/2025 04:33:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:25,887 127.0.0.1 - - [09/Jan/2025 04:33:25] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:25,923 127.0.0.1 - - [09/Jan/2025 04:33:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:32,185 127.0.0.1 - - [09/Jan/2025 04:33:32] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-01-09 04:33:32,215 ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-09 04:33:32,216 127.0.0.1 - - [09/Jan/2025 04:33:32] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-09 04:33:32,317 127.0.0.1 - - [09/Jan/2025 04:33:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:32,321 127.0.0.1 - - [09/Jan/2025 04:33:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:33:32,322 127.0.0.1 - - [09/Jan/2025 04:33:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:32,360 127.0.0.1 - - [09/Jan/2025 04:33:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:33:32,387 127.0.0.1 - - [09/Jan/2025 04:33:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:34:29,260  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-01-09 04:34:29,300  * Restarting with stat
+2025-01-09 04:34:29,538  * Debugger is active!
+2025-01-09 04:34:29,539  * Debugger PIN: 980-339-344
+2025-01-09 04:34:31,784 Failed login attempt with invalid form data for user: None
+2025-01-09 04:34:31,794 127.0.0.1 - - [09/Jan/2025 04:34:31] "GET / HTTP/1.1" 200 -
+2025-01-09 04:34:31,882 127.0.0.1 - - [09/Jan/2025 04:34:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-01-09 04:34:31,882 127.0.0.1 - - [09/Jan/2025 04:34:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-09 04:34:31,883 127.0.0.1 - - [09/Jan/2025 04:34:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-09 04:34:31,917 127.0.0.1 - - [09/Jan/2025 04:34:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-01-09 04:34:32,025 127.0.0.1 - - [09/Jan/2025 04:34:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-01-09 04:34:32,086 127.0.0.1 - - [09/Jan/2025 04:34:32] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-01-09 04:34:32,128 {"csp-report":{"document-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","referrer":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://ubiquitous-disco-q9rw6475x9rh64pg-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-01-09 04:34:32,129 127.0.0.1 - - [09/Jan/2025 04:34:32] "POST /csp_report HTTP/1.1" 200 -
