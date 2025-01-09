@@ -1,18 +1,17 @@
-from flask import Flask
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import jsonify
-import requests
-from flask_wtf import CSRFProtect
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, TextAreaField, DateTimeField, DecimalField, URLField, SubmitField
+from wtforms.validators import DataRequired, Length, Regexp, Email
+from flask_wtf.csrf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
-
-import userManagement as dbHandler
+import databaseManagement as dbHandler
+from datetime import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
+from forms import LoginForm, SignUpForm 
 
 # Code snippet for logging a message
 # app.logger.critical("message")
-
 app_log = logging.getLogger(__name__)
 logging.basicConfig(
     filename="security_log.log",
@@ -23,9 +22,8 @@ logging.basicConfig(
 
 # Generate a unique basic 16 key: https://acte.ltd/utils/randomkeygen
 app = Flask(__name__)
-app.secret_key = b"_53oi3uriq9pifpff;apl"
-csrf = CSRFProtect(app)
-
+app.secret_key = b"hSWrqNxeExuR03aq;apl"  # Secret key for CSRF protection and session management
+csrf = CSRFProtect(app)  # Initialize CSRF protection
 
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
@@ -34,9 +32,9 @@ csrf = CSRFProtect(app)
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
 def root():
-    return redirect("/", 302)
+    return redirect("/", 302)  # Redirect to the root URL
 
-
+# Route for the login page
 @app.route("/", methods=["POST", "GET"])
 @csp_header(
     {
@@ -58,25 +56,45 @@ def root():
         "frame-src": "'none'",
     }
 )
-def index():
-    return render_template("/index.html")
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = dbHandler.retrieveUserByUsername(form.username.data)
+        if user and check_password_hash(user['password'], form.password.data):
+            return redirect("/form.html")
+        else:
+            flash('Invalid username or password', 'danger')
+    return render_template("index.html", form=form)  # Render the login page with the form
 
+# Route for the sign up page
+@app.route('/signUp.html', methods=['GET', 'POST'])
+def sign_up():
+    form = SignUpForm()  # Create an instance of the sign up form
+    if request.method == "GET" and request.args.get("url"):
+        url = request.args.get("url", "")
+        return redirect(url, code=302)
+    if form.validate_on_submit():  # Check if the form is submitted and valid
+        try:
+            hashed_password = generate_password_hash(form.password.data)
+            dbHandler.insertUser(form.username.data, hashed_password)
+            return redirect("/index.html")
+        except Exception as e:
+            return render_template("signUp.html", error=True, message=str(e), form=form)
+    else:
+        for field, errors in form.errors.items():
+            for error in errors:
+                flash(f"Error in {getattr(form, field).label.text}: {error}", 'danger')
+    return render_template('signUp.html', form=form)
 
+# Route for the privacy policy page
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    return render_template("/privacy.html")
+    return render_template("/privacy.html")  # Render the privacy policy page
 
-
-# example CSRF protected form
-@app.route("/form.html", methods=["POST", "GET"])
-def form():
-    if request.method == "POST":
-        email = request.form["email"]
-        text = request.form["text"]
-        return render_template("/form.html")
-    else:
-        return render_template("/form.html")
-
+# Route for log entries
+@app.route('/form.html', methods=['GET','POST'])
+def log ():
+    return render_template('form.html')
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
@@ -84,7 +102,6 @@ def form():
 def csp_report():
     app.logger.critical(request.data.decode())
     return "done"
-
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

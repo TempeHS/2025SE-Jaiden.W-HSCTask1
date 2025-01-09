@@ -8,6 +8,11 @@
 	},
 	"editor.fontSize": 18,
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.profiles.windows": {
+		"Git Bash": {
+			"path": "C:\\Program Files\\Git\\bin\\bash.exe"
+		}
+	},
 	"window.restoreWindows": "preserve",
 	"workbench.editorAssociations": {
         	"*.md": "vscode.markdown.preview.editor"
