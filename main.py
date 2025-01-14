@@ -6,15 +6,18 @@ from flask_wtf.csrf import CSRFProtect
 from flask_csp.csp import csp_header
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+from flask_cors import CORS
 import logging
-import databaseManagement as dbHandler
-from werkzeug.security import generate_password_hash, check_password_hash
 from forms import LoginForm, SignUpForm
+import requests
 
 app = Flask(__name__)
 app.secret_key = b"hSWrqNxeExuR03aq;apl"
+api_key = "uPTPeF9BDNiqAkNj"
 csrf = CSRFProtect(app)
 limiter = Limiter(get_remote_address, app=app, default_limits=["5 per minute"])
+cors = CORS(app)
+app.config["CORS_HEADERS"] = "Content-Type"
 
 app_log = logging.getLogger(__name__)
 logging.basicConfig(
@@ -41,10 +44,9 @@ def root():
     return redirect("/", 302)  # Redirect to the root URL
 
 # Route for the login page
-@app.route("/", methods=["POST", "GET"])
+@app.route("/", methods=["GET"])
 @csp_header(
     {
-        # Server Side CSP is consistent with meta CSP in layout.html
         "base-uri": "'self'",
         "default-src": "'self'",
         "style-src": "'self'",
@@ -62,35 +64,67 @@ def root():
         "frame-src": "'none'",
     }
 )
-@limiter.limit("5 per minute")
 def login():
     form = LoginForm()
-    if form.validate_on_submit():
-        user = dbHandler.retrieveUserByUsername(form.username.data)
-        if user and check_password_hash(user['password'], form.password.data):
-            app.logger.info(f"Successful login attempt for user: {form.username.data}")
-            return redirect("/form.html")
-        else:
-            app.logger.warning(f"Failed login attempt for user: {form.username.data}")
-            flash('Invalid username or password', 'danger')
-    else:
-        app.logger.warning(f"Failed login attempt with invalid form data for user: {form.username.data}")
-    return render_template("index.html", form=form, rate_limit_exceeded=False)  # Render the login page with the form
-
-# Route for the sign up page
-@app.route('/signUp.html', methods=['GET', 'POST'])
-def sign_up():
-    form = SignUpForm()  # Create an instance of the sign up form
     if request.method == "GET" and request.args.get("url"):
         url = request.args.get("url", "")
         return redirect(url, code=302)
-    if form.validate_on_submit():  # Check if the form is submitted and valid
+    return render_template("index.html", form=form, rate_limit_exceeded=False)
+
+@app.route("/login", methods=["POST"])
+@limiter.limit("5 per minute", key_func=get_remote_address)
+def login_post():
+    form = LoginForm()
+    if form.validate_on_submit():
+        url = "http://127.0.0.1:3000/api/login"
+        data = {
+            "username": form.username.data,
+            "password": form.password.data
+        }
+        headers = {
+            "Authorisation": api_key
+        }
         try:
-            hashed_password = generate_password_hash(form.password.data)
-            dbHandler.insertUser(form.username.data, hashed_password)
-            return redirect("/index.html")
-        except Exception as e:
-            return render_template("signUp.html", error=True, message=str(e), form=form)
+            response = requests.post(url, json=data, headers=headers)
+            response.raise_for_status()
+            if response.status_code == 200:
+                app.logger.info(f"Successful login attempt for user: {form.username.data}")
+                return redirect("/form.html")
+            else:
+                app.logger.warning(f"Failed login attempt for user: {form.username.data}")
+                flash('Invalid username or password', 'danger')
+        except requests.exceptions.RequestException as e:
+            app.logger.error(f"Error during login attempt for user: {form.username.data} - {str(e)}")
+            flash('Incorrect username and/or password', 'danger')
+    else:
+        app.logger.warning(f"Failed login attempt with invalid form data for user: {form.username.data}")
+    return render_template("index.html", form=form, rate_limit_exceeded=False)
+
+# Sign up route
+@app.route("/signUp.html", methods=["GET", "POST"])
+def sign_up():
+    form = SignUpForm()
+    if request.method == "GET" and request.args.get("url"):
+        url = request.args.get("url", "")
+        return redirect(url, code=302)
+    if form.validate_on_submit():
+        url = "http://127.0.0.1:3000/api/signup"
+        data = {
+            "username": form.username.data,
+            "password": form.password.data
+        }
+        headers = {
+            "Authorisation": api_key
+        }
+        try:
+            response = requests.post(url, json=data, headers=headers)
+            response.raise_for_status()
+            if response.status_code == 201:
+                return redirect("/index.html")
+            else:
+                flash('An error occurred during sign up. Please try again.', 'danger')
+        except requests.exceptions.RequestException as e:
+            flash(f'An error occurred: {str(e)}', 'danger')
     else:
         for field, errors in form.errors.items():
             for error in errors:
