@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, redirect, flash, session
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
@@ -8,14 +8,16 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_cors import CORS
 import logging
-from forms import LoginForm, SignUpForm
+from forms import LoginForm, SignUpForm, TwoFactorForm
 import requests
+from twoFactor import generate_totp_secret, get_totp_uri, generate_qr_code, verify_totp
+import databaseManagement as dbHandler
 
 app = Flask(__name__)
 app.secret_key = b"hSWrqNxeExuR03aq;apl"
 api_key = "uPTPeF9BDNiqAkNj"
 csrf = CSRFProtect(app)
-limiter = Limiter(get_remote_address, app=app, default_limits=["5 per minute"])
+limiter = Limiter(get_remote_address, app=app)
 cors = CORS(app)
 app.config["CORS_HEADERS"] = "Content-Type"
 
@@ -43,7 +45,7 @@ def ratelimit_handler(e):
 def root():
     return redirect("/", 302)  # Redirect to the root URL
 
-# Route for the login page
+# Route for displaying the login page
 @app.route("/", methods=["GET"])
 @csp_header(
     {
@@ -64,16 +66,14 @@ def root():
         "frame-src": "'none'",
     }
 )
-def login():
+def login_page():
     form = LoginForm()
-    if request.method == "GET" and request.args.get("url"):
-        url = request.args.get("url", "")
-        return redirect(url, code=302)
     return render_template("index.html", form=form, rate_limit_exceeded=False)
 
+# Route for handling the login form submission
 @app.route("/login", methods=["POST"])
-@limiter.limit("5 per minute", key_func=get_remote_address)
-def login_post():
+@limiter.limit("5 per minute")
+def login():
     form = LoginForm()
     if form.validate_on_submit():
         url = "http://127.0.0.1:3000/api/login"
@@ -82,23 +82,44 @@ def login_post():
             "password": form.password.data
         }
         headers = {
-            "Authorisation": api_key
+            "Authorisation": api_key  
         }
         try:
             response = requests.post(url, json=data, headers=headers)
             response.raise_for_status()
             if response.status_code == 200:
-                app.logger.info(f"Successful login attempt for user: {form.username.data}")
-                return redirect("/form.html")
+                session['username'] = form.username.data
+                return redirect("/2fa")
             else:
-                app.logger.warning(f"Failed login attempt for user: {form.username.data}")
                 flash('Invalid username or password', 'danger')
         except requests.exceptions.RequestException as e:
-            app.logger.error(f"Error during login attempt for user: {form.username.data} - {str(e)}")
-            flash('Incorrect username and/or password', 'danger')
-    else:
-        app.logger.warning(f"Failed login attempt with invalid form data for user: {form.username.data}")
+            flash('An error occurred. Please try again later.', 'danger')
     return render_template("index.html", form=form, rate_limit_exceeded=False)
+
+@app.route("/2fa", methods=["GET", "POST"])
+@limiter.limit("5 per minute")
+def two_factor():
+    form = TwoFactorForm()
+    if 'username' not in session:
+        return redirect("/")
+    username = session['username']
+    user = dbHandler.retrieveUserByUsername(username)
+    if not user:
+        return redirect("/")
+    secret = user.get('totp_secret')
+    if not secret: #exception handling
+        secret = generate_totp_secret()
+        dbHandler.updateUserTotpSecret(username, secret)
+    uri = get_totp_uri(secret, username)
+    qr_code = generate_qr_code(uri)
+    if request.method == "POST" and form.validate_on_submit():
+        token = form.token.data
+        if verify_totp(token, secret):
+            return redirect("/form.html")
+        else:
+            flash('Invalid 2FA token', 'danger')
+    
+    return render_template("2fa.html", form=form, qr_code=qr_code)
 
 # Sign up route
 @app.route("/signUp.html", methods=["GET", "POST"])
@@ -111,7 +132,7 @@ def sign_up():
         url = "http://127.0.0.1:3000/api/signup"
         data = {
             "username": form.username.data,
-            "password": form.password.data
+            "password": form.password.data,
         }
         headers = {
             "Authorisation": api_key

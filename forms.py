@@ -26,3 +26,7 @@ class SignUpForm(FlaskForm):
         )
     ])
     submit = SubmitField('Sign Up')
+
+class TwoFactorForm(FlaskForm):
+    token = StringField('2FA Token', validators=[DataRequired()])
+    submit = SubmitField('Verify')

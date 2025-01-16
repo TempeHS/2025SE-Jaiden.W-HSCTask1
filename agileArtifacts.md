@@ -1,8 +1,8 @@
 # Agile Artifacts
 ## Sprint backlog list of achievables (annotate changes made during sprint, including data required) 
 - ~~Log all failed login attempts and implement a failed login policy, including a strong rate limiting for login page~~
-- API data sharing 
-- 2FA authentication
+- ~~API data sharing~~ 
+- ~~2FA authentication~~
 - Create and implement CSS for all pages, including ~~sign-up, login,~~ log/diary
 - SQLite database design and integration for ~~login/sign-up~~ and logs
 - Input sanitisation for ~~login/sign-up~~ and log entries
