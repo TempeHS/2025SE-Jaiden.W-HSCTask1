@@ -44,3 +44,13 @@ def updateUserTotpSecret(username, totp_secret):
     )
     conn.commit()
     conn.close()
+
+def insertLogEntry(developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code):
+    con = sql.connect(db_path)
+    cur = con.cursor()
+    cur.execute(
+        "INSERT INTO log_entries_9f3b2 (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code),
+    )
+    con.commit()
+    con.close()

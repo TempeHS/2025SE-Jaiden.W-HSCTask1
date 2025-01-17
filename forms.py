@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import DataRequired, Length, Regexp
+from wtforms import StringField, PasswordField, SubmitField, DateTimeField, DecimalField, URLField, TextAreaField
+from wtforms.validators import DataRequired, Length, Regexp, URL
+import html
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[
@@ -30,3 +31,21 @@ class SignUpForm(FlaskForm):
 class TwoFactorForm(FlaskForm):
     token = StringField('2FA Token', validators=[DataRequired()])
     submit = SubmitField('Verify')
+
+class LogEntryForm(FlaskForm):
+    developer = StringField('Developer', validators=[DataRequired(), Length(max=50)])
+    project = StringField('Project', validators=[DataRequired(), Length(max=100)])
+    start_time = DateTimeField('Start Time', format='%Y-%m-%dT%H:%M', validators=[DataRequired()])
+    end_time = DateTimeField('End Time', format='%Y-%m-%dT%H:%M', validators=[DataRequired()])
+    time_worked = DecimalField('Time Worked (hours)', places=2, validators=[DataRequired()])
+    repo = URLField('Repo Link', validators=[DataRequired(), URL()])
+    developer_notes = TextAreaField('Developer Notes', validators=[Length(max=500)])
+    developer_code = TextAreaField('Developer Code', validators=[DataRequired(), Length(max=1000)])
+    submit = SubmitField('Submit')
+
+def sanitizeLogData(self):
+    self.developer.data = html.escape(self.developer.data)
+    self.project.data = html.escape(self.project.data)
+    self.repo.data = html.escape(self.repo.data)
+    self.developer_notes.data = html.escape(self.developer_notes.data)
+    self.developer_code.data = html.escape(self.developer_code.data)
