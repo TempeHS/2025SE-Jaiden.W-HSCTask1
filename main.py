@@ -108,7 +108,7 @@ def two_factor():
     if not user:
         return redirect("/")
     secret = user.get('totp_secret')
-    if not secret:
+    if not secret: #exception handling for users without 2FA secret
         secret = generate_totp_secret()
         dbHandler.updateUserTotpSecret(username, secret)
     uri = get_totp_uri(secret, username)
@@ -128,9 +128,6 @@ def two_factor():
 @app.route("/signUp.html", methods=["GET", "POST"])
 def sign_up():
     form = SignUpForm()
-    if request.method == "GET" and request.args.get("url"):
-        url = request.args.get("url", "")
-        return redirect(url, code=302)
     if form.validate_on_submit():
         sanitized_data = sanitize_data({
             "username": form.username.data,
@@ -164,11 +161,6 @@ def privacy():
 @app.route('/form.html', methods=['GET','POST'])
 def submit_log():
     form = LogEntryForm()
-    if request.method == 'GET':
-        if request.args.get("url"):
-            url = request.args.get("url", "")
-            return redirect(url, code=302)
-        return render_template('form.html', form=form)
     if request.method == 'POST':
         form.sanitizeLogData()
         data = {
