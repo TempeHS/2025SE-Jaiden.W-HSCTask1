@@ -1,29 +1,25 @@
 # Agile Artifacts
 ## Sprint backlog list of achievables (annotate changes made during sprint, including data required) 
-- ~~Implement a privacy handling policy~~
-- ~~Implement a strict content security policy~~
-- Create and implement CSS for all pages, including ~~sign-up, login~~, log/diary
-- ~~SQLite database design and integration~~
-- ~~Ability for new team members to self-sign up aswell as existing members to login~~ 
-- ~~Document and implement an appropriate hashing algorithm for securely storing passwords in the database.~~  
-- Input sanitisation for ~~login/sign-up~~ and log entries
+- ~~Log all failed login attempts and implement a failed login policy, including a strong rate limiting for login page~~
+- ~~API data sharing~~ 
+- ~~2FA authentication~~
+- Create and implement CSS for all pages, including ~~sign-up, login, log/diary entry~~, entries
+- SQLite database design and integration for ~~login/sign-up, log/diary entry~~, entries
+- ~~Input sanitisation for login/sign-up and log entries~~
 
 ## Increment (what must be achieved by the end of the sprint)
-
-- Have a privacy handling policy that can be easily accessed by users in the app
-- Have a strict content security policy that reduces the risk and impact of XXS attacks 
-- Create pages for sign up and sign in that are user friendly and help the functionality of the app 
-- Have a effective hashing algorithm to store passwords
-- Have input sanitisation for both log in and sign up forms 
+- Implement a failed login policy which includes a strong rate limit
+- Implement an API for data sharing between the front-end and back-end
+- Designed and created the log/diary entry page that is integrated with the database
+- Input sanitisation for logs
 
 ## Sprint Review (Focus on project management)
 ### What challenges did you have
- - Implementing CSS for login and sign-up pages. I found it difficult to make the pages both visually appealing and practical. I experimented with different looks utilising bootstrap frameworks. 
- - Getting the CSRF tokens to work. I was unfamiliar with how these tokens worked so it took me time to properly implement them. 
- - I wasn't used to the agile approach being used. Sometimes I find myself sidetracking and not specifically focusing on the list of acheivable set in the agile backlog. 
+ - Had an issue with my implementation of a rate limiter. It was applying to both GET and POST request which was undesirable. Eventually this was fixed. 
+ - When initially adding 2FA, the authentication token wasn't unique for each user. This was fixed after generating unique OTP secrets for each user and storing it within the database. 
 ### What did you do well
-- Implementing an effective hashing method to store passwords. This was made easier by utilsing flask's in-built library 'werkzeug'.
-- Implementing the login and sign-up logic. Using previous work as reference, I found this to be relatively simple and done effectively.  
+- I successfully added an API to my PWA. This effectively handles data between the front-end and back-end for my app. 
+- I sanitised inputs for both log entries and login/sign-in to prevent any malicious code being put in.  
 ### What will you do differently next time
-- Have a better idea of how I want my pages to be set out. Maybe using a storyboard to better plan it out for next time.
-- Stick more closer to an agile approach, making sure I'm on track to deliver my achievables set within the sprint. 
+- I'll implement more logging to help with debugging. The logs were helpful for troubleshooting problems and also making the app more secure. 
+- Abstract more of my code to separate files so I can reuse code in future projects e.g sanitize.py

@@ -2,16 +2,16 @@
 {% block content %}
 <div class="login-container">
     <h1 class="form-title">Login</h1>
-    <form action="{{ url_for('login') }}" method="post" class="login-form">
+    <form action="{{ url_for('login') }}" method="post" class="login-form" {% if rate_limit_exceeded %}disabled{% endif %}>
         {{ form.hidden_tag() }}
         <div class="input__wrapper">
-            {{ form.username.label }} {{ form.username(class="input__field") }}
+            {{ form.username.label }} {{ form.username(class="input__field", disabled=rate_limit_exceeded) }}
         </div>
         <div class="input__wrapper">
-            {{ form.password.label }} {{ form.password(class="input__field") }}
+            {{ form.password.label }} {{ form.password(class="input__field", disabled=rate_limit_exceeded) }}
         </div>
         <div class="input__wrapper">
-            {{ form.submit(class="btn") }}
+            {{ form.submit(class="btn", disabled=rate_limit_exceeded) }}
         </div>
         <div class="input__wrapper">
             <h3 class="form-other">Don't have an account? <a href="{{ url_for('sign_up') }}">Sign Up</a></h3>
