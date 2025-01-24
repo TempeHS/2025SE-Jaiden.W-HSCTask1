@@ -54,3 +54,23 @@ def insertLogEntry(developer, project, start_time, end_time, time_worked, repo, 
     )
     con.commit()
     con.close()
+
+def retrieveLogEntries():
+    conn = sql.connect(db_path)
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM log_entries_9f3b2")
+    rows = cur.fetchall()
+    conn.close()
+    log_entries = []
+    for row in rows:
+        log_entries.append({
+            'developer': row[1],
+            'project': row[2],
+            'start_time': row[3],
+            'end_time': row[4],
+            'time_worked': row[5],
+            'repo': row[6],
+            'developer_notes': row[7],
+            'developer_code': row[8]
+        })
+    return log_entries
