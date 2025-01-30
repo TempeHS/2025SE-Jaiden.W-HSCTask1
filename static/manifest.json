@@ -70,9 +70,5 @@
       "type": "image/png",
       "label": ""
     }
-  ],
-  "meta": {
-    "http-equiv": "Content-Security-Policy",
-    "content": "default-src 'self'; manifest-src 'self' https://github.dev/path/to/manifest"
+  ]
   }
-}

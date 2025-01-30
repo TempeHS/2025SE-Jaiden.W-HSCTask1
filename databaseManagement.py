@@ -31,7 +31,7 @@ def retrieveUserByUsername(username):
             'id': user[0],
             'username': user[1],
             'password': user[2],
-            'totp_secret': user[3]  # Assuming the totp_secret is stored in the 4th column
+            'totp_secret': user[3] 
         }
     return None
 
@@ -45,12 +45,88 @@ def updateUserTotpSecret(username, totp_secret):
     conn.commit()
     conn.close()
 
-def insertLogEntry(developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code):
+def insertLogEntry(developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code, diary_entry):
     con = sql.connect(db_path)
     cur = con.cursor()
     cur.execute(
-        "INSERT INTO log_entries_9f3b2 (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-        (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code),
+        "INSERT INTO log_entries_9f3b2 (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code, diary_entry) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code, diary_entry),
     )
     con.commit()
     con.close()
+
+def retrieveLogEntries(query=None, category=None):
+    conn = sql.connect(db_path)
+    cur = conn.cursor()
+    if query and category:
+        query = f"%{query}%"
+        sql_query = f"SELECT * FROM log_entries_9f3b2 WHERE {category} LIKE ?"
+        cur.execute(sql_query, (query,))
+    else:
+        cur.execute("SELECT * FROM log_entries_9f3b2")
+    rows = cur.fetchall()
+    conn.close()
+    log_entries = []
+    for row in rows:
+        log_entries.append({
+            'developer': row[1],
+            'project': row[2],
+            'start_time': row[3],
+            'end_time': row[4],
+            'time_worked': row[5],
+            'repo': row[6],
+            'developer_notes': row[7],
+            'developer_code': row[8],
+            'diary_entry': row[9]
+        })
+    return log_entries
+
+def retrieveUserData(username):
+    conn = sql.connect(db_path)
+    cur = conn.cursor()
+    # Retrieve user data
+    cur.execute("SELECT * FROM secure_users_9f WHERE username = ?", (username,))
+    user = cur.fetchone()
+    # Retrieve user's log entries
+    cur.execute("SELECT * FROM log_entries_9f3b2 WHERE developer = ?", (username,))
+    log_entries = cur.fetchall()
+    conn.close()
+    if user:
+        user_data = {
+            'id': user[0],
+            'username': user[1],
+            'password': user[2],
+            'totp_secret': user[3],
+            'log_entries': []
+        }
+        for entry in log_entries:
+            user_data['log_entries'].append({
+                'id': entry[0],
+                'developer': entry[1],
+                'project': entry[2],
+                'start_time': entry[3],
+                'end_time': entry[4],
+                'time_worked': entry[5],
+                'repo': entry[6],
+                'developer_notes': entry[7],
+                'developer_code': entry[8],
+                'diary_entry': entry[9]
+            })
+        return user_data
+    return None
+
+def deleteUserData(username):
+    conn = sql.connect(db_path)
+    cur = conn.cursor()
+    try:
+        # Delete user's log entries
+        cur.execute("DELETE FROM log_entries_9f3b2 WHERE developer = ?", (username,))
+        # Delete user data
+        cur.execute("DELETE FROM secure_users_9f WHERE username = ?", (username,))
+        conn.commit()
+        conn.close()
+        return True
+    except sql.Error as e:
+        conn.rollback()
+        conn.close()
+        return False

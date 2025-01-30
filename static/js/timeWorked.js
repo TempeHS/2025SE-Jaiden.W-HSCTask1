@@ -18,11 +18,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function formatDateToLocalISO(date) {
+        const tzOffset = date.getTimezoneOffset() * 60000; // offset in milliseconds
+        const localISOTime = new Date(date - tzOffset).toISOString().slice(0, -1);
+        return localISOTime;
+    }
+
     const startTimeInput = document.getElementById("start_time");
     const endTimeInput = document.getElementById("end_time");
 
-    startTimeInput.addEventListener("change", calculateTimeWorked);
-    endTimeInput.addEventListener("change", calculateTimeWorked);
+    startTimeInput.addEventListener("change", function() {
+        const startTime = new Date(startTimeInput.value);
+        startTimeInput.value = formatDateToLocalISO(startTime);
+        calculateTimeWorked();
+    });
+
+    endTimeInput.addEventListener("change", function() {
+        const endTime = new Date(endTimeInput.value);
+        endTimeInput.value = formatDateToLocalISO(endTime);
+        calculateTimeWorked();
+    });
 
     // Set initial values to the current time rounded to the nearest 15 minutes
     const now = new Date();

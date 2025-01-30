@@ -1,25 +1,24 @@
 # Agile Artifacts
 ## Sprint backlog list of achievables (annotate changes made during sprint, including data required) 
-- ~~Log all failed login attempts and implement a failed login policy, including a strong rate limiting for login page~~
-- ~~API data sharing~~ 
-- ~~2FA authentication~~
-- Create and implement CSS for all pages, including ~~sign-up, login, log/diary entry~~, entries
-- SQLite database design and integration for ~~login/sign-up, log/diary entry~~, entries
-- ~~Input sanitisation for login/sign-up and log entries~~
+- ~~Create and implement CSS for all pages, including ~~sign-up, login, log/diary entry~~, entries~~
+- ~~SQLite database design and integration for ~~login/sign-up, log/diary entry~~, entries~~
+- ~~Developer log entries are time/date stamped~~
+- ~~Allow developers to search entries by developer, date, project or log/diary contents~~
+- ~~Users given the option to download or delete their data~~
+- ~~Authentication and session management~~
 
 ## Increment (what must be achieved by the end of the sprint)
-- Implement a failed login policy which includes a strong rate limit
-- Implement an API for data sharing between the front-end and back-end
-- Designed and created the log/diary entry page that is integrated with the database
-- Input sanitisation for logs
+- Create page for log entries that can be filtered to search for specific entries
+- Users are given to option to delete or download their data 
+- Implement session managment to further secure the app 
 
 ## Sprint Review (Focus on project management)
 ### What challenges did you have
- - Had an issue with my implementation of a rate limiter. It was applying to both GET and POST request which was undesirable. Eventually this was fixed. 
- - When initially adding 2FA, the authentication token wasn't unique for each user. This was fixed after generating unique OTP secrets for each user and storing it within the database. 
+- The manifest is getting blocked by the content security policy. I will resolves this in a future sprint.
+- I had struggles with implementing session management. Had to change my index.html to an authenticated page for it to work.
 ### What did you do well
-- I successfully added an API to my PWA. This effectively handles data between the front-end and back-end for my app. 
-- I sanitised inputs for both log entries and login/sign-in to prevent any malicious code being put in.  
+- I abstracted lines of code from main.py to separate files to promote reusability and better readability.
+- I effectively integrated the database for the entry page. Accessing the database to GET log entries and display it  to  the user.
 ### What will you do differently next time
-- I'll implement more logging to help with debugging. The logs were helpful for troubleshooting problems and also making the app more secure. 
-- Abstract more of my code to separate files so I can reuse code in future projects e.g sanitize.py
+- I will abstract more of my code earlier, making sure it isn't an afterthought.
+- Use the browser developer tools more. It will help me with debugging and looking for any issues. 

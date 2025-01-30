@@ -1,6 +1,9 @@
 import databaseManagement as dbHandler
 from werkzeug.security import generate_password_hash, check_password_hash
 from twoFactor import generate_totp_secret
+import logging
+
+app_log = logging.getLogger(__name__)
 
 def login_user(username, password):
     user = dbHandler.retrieveUserByUsername(username)
@@ -15,5 +18,6 @@ def signup_user(username, password):
     try:
         dbHandler.insertUser(username, hashed_password, totp_secret)
         return {"message": "User created successfully"}, 201
-    except Exception as e:
-        return {"message": str(e)}, 500
+    except Exception:
+        logging.error("Error during signup")
+        return {"message": "Internal server error"}, 500

@@ -1,30 +1,64 @@
 {% extends 'layout.html' %}
 {% block content %}
-<div class="login-container">
-    <h1 class="form-title">Login</h1>
-    <form action="{{ url_for('login') }}" method="post" class="login-form" {% if rate_limit_exceeded %}disabled{% endif %}>
+<div class="container mt-5">
+    <h1 class="mb-4">Log Entry Form</h1>
+    <form id="log-entry-form" action="""/submit-log" method="POST" class="row g-3">
         {{ form.hidden_tag() }}
-        <div class="input__wrapper">
-            {{ form.username.label }} {{ form.username(class="input__field", disabled=rate_limit_exceeded) }}
+        <!-- Developer Name -->
+        <div class="col-md-6">
+            <label for="developer" class="form-label">Developer</label>
+            {{ form.developer(class="form-control", placeholder="Ben Jones", required=True, readonly=True) }}
         </div>
-        <div class="input__wrapper">
-            {{ form.password.label }} {{ form.password(class="input__field", disabled=rate_limit_exceeded) }}
+
+        <!-- Project Name -->
+        <div class="col-md-6">
+            <label for="project" class="form-label">Project</label>
+            <input type="text" id="project" name="project" class="form-control" placeholder="SE2025" required>
         </div>
-        <div class="input__wrapper">
-            {{ form.submit(class="btn", disabled=rate_limit_exceeded) }}
+
+        <!-- Start Time -->
+        <div class="col-md-6">
+            <label for="start_time" class="form-label">Start Time</label>
+            <input type="datetime-local" id="start_time" name="start_time" class="form-control" required>
         </div>
-        <div class="input__wrapper">
-            <h3 class="form-other">Don't have an account? <a href="{{ url_for('sign_up') }}">Sign Up</a></h3>
+
+        <!-- End Time -->
+        <div class="col-md-6">
+            <label for="end_time" class="form-label">End Time</label>
+            <input type="datetime-local" id="end_time" name="end_time" class="form-control" required>
         </div>
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                <div class="flash-messages">
-                    {% for category, message in messages %}
-                        <p class="flash-message {{ category }}">{{ message }}</p>
-                    {% endfor %}
-                </div>
-            {% endif %}
-        {% endwith %}
+
+        <!-- Time Worked -->
+        <div class="col-md-6">
+            <label for="time_worked" class="form-label">Time Worked (hours)</label>
+            <input type="number" step="0.1" id="time_worked" name="time_worked" class="form-control" placeholder="2.5" required readonly>
+        </div>
+
+        <!-- Repository Link -->
+        <div class="col-md-6">
+            <label for="repo" class="form-label">Repo Link</label>
+            <input type="url" id="repo" name="repo" class="form-control" placeholder="https://github.com/example" required>
+        </div>
+       
+        <!-- Developer Notes -->
+        <div class="col-12">
+            <label for="developer_notes" class="form-label">Developer Notes</label>
+            <textarea id="developer_notes" name="developer_notes" class="form-control" rows="4" placeholder="Enter any additional notes..." required></textarea>
+        </div>  
+       
+        <!-- Developer Code -->
+        <div class="col-12">
+            <label for="developer_code" class="form-label">Developer Code</label>
+            <textarea id="developer_code" name="developer_code" class="form-control" rows="10"
+                placeholder="Add your code here..."></textarea>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
 </div>
+
+<!-- Script to calculate time worked -->
+<script src="{{ url_for('static', filename='js/timeWorked.js') }}"></script>
 {% endblock %}

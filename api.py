@@ -17,7 +17,14 @@ limiter = Limiter(
     storage_uri="memory://",
 )
 
-logging.basicConfig(level=logging.DEBUG)
+# Initialize logging
+app_log = logging.getLogger(__name__)
+logging.basicConfig(
+    filename="api_security_log.log",
+    encoding="utf-8",
+    level=logging.DEBUG,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
 
 def check_api_key():
     if request.headers.get("Authorisation") != auth_key:
@@ -46,8 +53,8 @@ def api_signup():
     try:
         response, status_code = signup_user(username, password)
         return jsonify(response), status_code
-    except Exception as e:
-        api.logger.error(f"Error during signup: {str(e)}")
+    except Exception:
+        api.logger.error("Error during signup", exc_info=True)
         return jsonify({"message": "Internal server error"}), 500
 
 @api.route("/api/logEntry", methods=["POST"])
@@ -65,12 +72,26 @@ def api_log_entry():
     repo = data.get("repo")
     developer_notes = data.get("developer_notes")
     developer_code = data.get("developer_code")
+    diary_entry = data.get("diary_entry")   
+    app_log.debug("Received log entry data: %s", data)
     try:
-        dbHandler.insertLogEntry(developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code)
+        dbHandler.insertLogEntry(developer, project, start_time, end_time, time_worked, repo, developer_notes, developer_code, diary_entry)
         api.logger.info("Log entry submitted successfully")
         return jsonify({"message": "Log entry submitted successfully"}), 201
+    except Exception:
+        api.logger.error("Error during log entry submission", exc_info=True)
+        return jsonify({"message": "Internal server error"}), 500
+
+@api.route("/api/logEntries", methods=["GET"])
+@limiter.limit("1/second", override_defaults=False)
+def api_log_entries():
+    query = request.args.get("query")
+    category = request.args.get("category") 
+    try:
+        log_entries = dbHandler.retrieveLogEntries(query, category)
+        return jsonify(log_entries), 200
     except Exception as e:
-        api.logger.error(f"Error during log entry submission: {str(e)}")
+        api.logger.error("Error retrieving log entries", exc_info=True)
         return jsonify({"message": "Internal server error"}), 500
 
 if __name__ == "__main__":
