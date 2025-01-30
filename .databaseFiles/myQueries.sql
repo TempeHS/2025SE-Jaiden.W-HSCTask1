@@ -4,4 +4,4 @@
 
 -- SELECT * FROM extension;
 
-ALTER TABLE secure_users_9f ADD COLUMN totp_secret TEXT;
+ALTER TABLE log_entries_new RENAME TO log_entries_9f3b2;

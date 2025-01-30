@@ -1,7 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, DateTimeField, DecimalField, URLField, TextAreaField
+from wtforms import StringField, PasswordField, SubmitField, DateTimeField, DecimalField, URLField, TextAreaField, HiddenField
 from wtforms.validators import DataRequired, Length, Regexp, URL
 import html
+from datetime import datetime
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[
@@ -33,7 +34,7 @@ class TwoFactorForm(FlaskForm):
     submit = SubmitField('Verify')
 
 class LogEntryForm(FlaskForm):
-    developer = StringField('Developer', validators=[DataRequired(), Length(max=50)])
+    developer = StringField('Developer', validators=[DataRequired(), Length(max=50)], render_kw={'readonly': True})
     project = StringField('Project', validators=[DataRequired(), Length(max=100)])
     start_time = DateTimeField('Start Time', format='%Y-%m-%dT%H:%M', validators=[DataRequired()])
     end_time = DateTimeField('End Time', format='%Y-%m-%dT%H:%M', validators=[DataRequired()])
@@ -41,11 +42,20 @@ class LogEntryForm(FlaskForm):
     repo = URLField('Repo Link', validators=[DataRequired(), URL()])
     developer_notes = TextAreaField('Developer Notes', validators=[Length(max=500)])
     developer_code = TextAreaField('Developer Code', validators=[DataRequired(), Length(max=1000)])
+    diary_entry = HiddenField('Timestamp', default=datetime.utcnow().isoformat())
     submit = SubmitField('Submit')
 
-def sanitizeLogData(self):
-    self.developer.data = html.escape(self.developer.data)
-    self.project.data = html.escape(self.project.data)
-    self.repo.data = html.escape(self.repo.data)
-    self.developer_notes.data = html.escape(self.developer_notes.data)
-    self.developer_code.data = html.escape(self.developer_code.data)
+    def __init__(self, username=None, *args, **kwargs):
+        super(LogEntryForm, self).__init__(*args, **kwargs)
+        if username:
+            self.developer.data = username
+    
+    def sanitizeLogData(self):
+        self.developer.data = html.escape(self.developer.data)
+        self.project.data = html.escape(self.project.data)
+        self.repo.data = html.escape(self.repo.data)
+        self.developer_notes.data = html.escape(self.developer_notes.data)
+        self.developer_code.data = html.escape(self.developer_code.data)
+
+class DeleteUserForm(FlaskForm):
+    submit = SubmitField('Delete my Data')

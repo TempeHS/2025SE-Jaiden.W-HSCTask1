@@ -7,7 +7,7 @@
         <!-- Developer Name -->
         <div class="col-md-6">
             <label for="developer" class="form-label">Developer</label>
-            <input type="text" id="developer" name="developer" class="form-control" placeholder="Ben Jones" required>
+            {{ form.developer(class="form-control", placeholder="Ben Jones", required=True, readonly=True) }}
         </div>
 
         <!-- Project Name -->

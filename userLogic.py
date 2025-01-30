@@ -2,10 +2,8 @@ import databaseManagement as dbHandler
 from werkzeug.security import generate_password_hash, check_password_hash
 from twoFactor import generate_totp_secret
 import logging
-from main import app_log  # Import the logger from main.py
 
-logging.basicConfig(level=logging.DEBUG)
-
+app_log = logging.getLogger(__name__)
 
 def login_user(username, password):
     user = dbHandler.retrieveUserByUsername(username)

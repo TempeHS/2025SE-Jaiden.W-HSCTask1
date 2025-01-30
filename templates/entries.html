@@ -2,6 +2,16 @@
 {% block content %}
 <h1 class="text-center my-4">Developer Log Entries</h1>
 <div class="container">
+    <form class="d-flex mb-4" role="search" action="/entries.html" method="get">
+        <select class="form-select me-2" name="category" aria-label="Search Category">
+            <option value="developer">Developer</option>
+            <option value="project">Project</option>
+            <option value="developer_notes">Developer Notes</option>
+            <option value="developer_code">Developer Code</option>
+        </select>
+        <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
     <div class="row">
     {% for entry in log_entries %}
     <div class="col-md-6 mb-4">
@@ -25,9 +35,12 @@
                 <a href="{{ entry.repo }}" target="_blank" class="text-decoration-none text-info">{{ entry.repo }}</a>
             </p>
             <p class="card-text">
-                <strong>Notes:</strong> {{ entry.developer_notes }}
+                <strong>Developer Notes:</strong> {{ entry.developer_notes }}
             </p>
             <pre class="bg-light p-2 border rounded"><code>{{ entry.developer_code }}</code></pre>
+            <p class="card-text">
+                <strong>Diary Entry:</strong> {{ entry.diary_entry }} <i>(UTC)</i>
+            </p>
             </div>
         </div>
     </div>
