@@ -58,7 +58,7 @@ def api_signup():
         return jsonify({"message": "Internal server error"}), 500
 
 @api.route("/api/logEntry", methods=["POST"])
-@limiter.limit("10 per minute")
+@limiter.limit("1/second", override_defaults=False)
 def api_log_entry():
     auth_response = check_api_key()
     if auth_response:

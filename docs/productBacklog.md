@@ -11,9 +11,10 @@
 - ~~Document and implement an appropriate hashing algorithm for securely storing passwords in the database.~~ 
 - ~~SQLite database design and integration for ~~login/sign-up, log/diary entry~~, entries~~
 - ~~Input sanitisation for ~~login/sign-up~~ and log entries~~
-- Users given the option to download or delete their data
+- ~~Users given the option to download or delete their data~~
 - ~~Implement a privacy handling policy~~
 - ~~Create and implement CSS for all pages, including ~~sign-up, login, log/diary entry~~, entries~~
 - ~~Implement a strict content security policy~~
 - Implement server logs to monitor for unusual activity
 - ~~Log all failed login attempts and implement a failed login policy, including a strong rate limiting for login page~~
+- Minimise vulnerabilities in user action controls.

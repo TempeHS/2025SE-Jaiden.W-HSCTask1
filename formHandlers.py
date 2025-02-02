@@ -1,12 +1,10 @@
-from flask import flash, session, redirect, render_template, request
+from flask import flash, session, redirect, render_template, request, url_for
 import requests
 import logging
 import databaseManagement as dbHandler
 from twoFactor import generate_totp_secret, get_totp_uri, generate_qr_code, verify_totp
 from sanitize import sanitize_data, sanitize_input
 from timestampRounding import get_rounded_timestamp
-import pytz
-from datetime import datetime
 
 app_log = logging.getLogger(__name__)
 app_header = {"Authorisation": "uPTPeF9BDNiqAkNj"}
@@ -25,13 +23,13 @@ def handle_login(loginForm):
                 session['username'] = loginForm.username.data
                 session.permanent = True  # Mark the session as permanent
                 app_log.info("User '%s' logged in, hasn't passed 2FA", loginForm.username.data)
-                return redirect("/2fa")
+                return redirect(url_for('two_factor'))
             else:
                 flash('Invalid username or password', 'danger')
                 app_log.warning("Failed login attempt for user: %s", loginForm.username.data)
         except requests.exceptions.HTTPError as e:
             flash('Invalid username or password', 'danger')
-            app_log.error("HTTPError during login attempt for user: %s - %s", loginForm.username.data, str(e))
+            app_log.error("Invalid login attempt for user: %s - %s", loginForm.username.data, str(e))
         except requests.exceptions.RequestException as e:
             flash('An error occurred. Please try again later.', 'danger')
             app_log.error("Error during login attempt for user: %s - %s", loginForm.username.data, str(e))
@@ -39,11 +37,11 @@ def handle_login(loginForm):
 
 def handle_two_factor(twoFactorForm):
     if 'username' not in session:
-        return redirect("/")
+        return redirect(url_for('login'))
     username = session['username']
     user = dbHandler.retrieveUserByUsername(username)
     if not user:
-        return redirect("/")
+        return redirect(url_for('login'))
     secret = user.get('totp_secret')
     if not secret: #exception handling for users without 2FA secret
         secret = generate_totp_secret()
@@ -54,7 +52,7 @@ def handle_two_factor(twoFactorForm):
         token = twoFactorForm.token.data
         if verify_totp(token, secret):
             app_log.info("2FA successful, User '%s' logged in successfully", username)
-            return redirect("/index.html")
+            return redirect(url_for('root'))
         else:
             flash('Invalid 2FA token', 'danger')
             app_log.warning("Invalid 2FA token for user: %s", username)
@@ -98,9 +96,9 @@ def handle_sign_up(signUpForm):
             response = requests.post("http://127.0.0.1:3000/api/signup", json=sanitized_data, headers=app_header)
             response.raise_for_status()
             if response.status_code == 201:
-                app_log.info("User %s signed up successfully", signUpForm.username.data)
+                app_log.info("User '%s' signed up successfully", signUpForm.username.data)
                 flash('Sign up successful. Please log in.', 'success')
-                return redirect("/login.html")
+                return redirect(url_for('login'))
             else:
                 flash('An error occurred during sign up. Please try again.', 'danger')
                 app_log.warning("Failed signup attempt for user: %s", signUpForm.username.data)
@@ -116,11 +114,15 @@ def handle_sign_up(signUpForm):
 
 def handle_entries():
     if 'username' not in session:
-        return redirect("login.html")
+        return redirect(url_for('login'))
     query = request.args.get('query')
     category = request.args.get('category')
     query = sanitize_input(query) if query else None
     category = sanitize_input(category) if category else None
+    allowed_categories = ["developer", "project", "developer_notes", "developer_code"]  # List of allowed column names
+    if category and category not in allowed_categories:
+        flash('Invalid category', 'danger')
+        return render_template('entries.html', log_entries=[])
     params = {'query': query, 'category': category} if query and category else {}
     try:
         response = requests.get("http://127.0.0.1:3000/api/logEntries", headers=app_header, params=params)

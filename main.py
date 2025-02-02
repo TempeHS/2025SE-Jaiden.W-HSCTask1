@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash, session, send_file
+from flask import Flask, render_template, request, redirect, flash, session
 from flask_wtf.csrf import CSRFProtect
 from flask_csp.csp import csp_header
 from flask_limiter import Limiter
@@ -6,13 +6,11 @@ from flask_limiter.util import get_remote_address
 from flask_cors import CORS
 from flask_session import Session
 import logging
-import io
-import json
-from forms import LoginForm, SignUpForm, TwoFactorForm, LogEntryForm, DeleteUserForm
+from forms import LoginForm, SignUpForm, TwoFactorForm, LogEntryForm, DeleteUserForm, DownloadDataForm
 from datetime import timedelta
 from formHandlers import handle_login, handle_two_factor, handle_log_entry, handle_sign_up, handle_entries
-from databaseManagement import retrieveUserData, deleteUserData
 from profileHandler import downloadData, deleteData
+from sessionLocks import acquire_session_lock, cleanup_session_lock
 
 app = Flask(__name__)
 app.secret_key = b"hSWrqNxeExuR03aq;apl"
@@ -33,12 +31,24 @@ logging.basicConfig(
 # Flask-Session configuration
 app.config["SESSION_TYPE"] = "filesystem"
 app.config["SESSION_PERMANENT"] = True  # Make sessions permanent
-app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=1440)  # Set session lifetime to 24 hrs
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=720)  # Set session lifetime to 24 hrs
 app.config["SESSION_USE_SIGNER"] = True
 app.config["SESSION_KEY_PREFIX"] = "session:"
 app.config["SESSION_FILE_DIR"] = "./.flask_session/"
 app.config["SESSION_FILE_THRESHOLD"] = 100
 Session(app)
+
+# Secure cookie settings
+app.config.update(
+    SESSION_COOKIE_SECURE=True,  # Ensure cookies are only sent over HTTPS
+    SESSION_COOKIE_HTTPONLY=True,  # Prevent JavaScript access to cookies
+    SESSION_COOKIE_SAMESITE='Lax',  # Control how cookies are sent with cross-site requests
+)
+
+# Register the cleanup function to be called after each request
+@app.teardown_request
+def teardown_request(exception=None):
+    return cleanup_session_lock(exception)
 
 # Custom error handler for rate limit exceeded
 @app.errorhandler(429)
@@ -90,17 +100,23 @@ def submit_log():
 @limiter.limit("5 per minute")
 def login():
     loginForm = LoginForm()
-    return handle_login(loginForm)
+    lock = acquire_session_lock()
+    with lock:
+        return handle_login(loginForm)
 
 @app.route("/2fa", methods=["GET", "POST"])
 def two_factor():
     twoFactorForm = TwoFactorForm()
-    return handle_two_factor(twoFactorForm)
+    lock = acquire_session_lock()
+    with lock:
+        return handle_two_factor(twoFactorForm)
 
 @app.route("/signUp.html", methods=["GET", "POST"])
 def sign_up():
     signUpForm = SignUpForm()
-    return handle_sign_up(signUpForm)
+    lock = acquire_session_lock()
+    with lock:
+        return handle_sign_up(signUpForm)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
@@ -108,7 +124,9 @@ def privacy():
 
 @app.route('/entries.html', methods=['GET'])
 def entries():
-    return handle_entries()
+    lock = acquire_session_lock()
+    with lock:
+        return handle_entries()
 
 @app.route("/profile.html", methods=["GET"])
 def profile():
@@ -116,15 +134,20 @@ def profile():
         return redirect("/login.html")
     username = session['username']
     deleteUserForm = DeleteUserForm()
-    return render_template("/profile.html", username=username, form=deleteUserForm)
+    downloadDataForm = DownloadDataForm()
+    return render_template("/profile.html", username=username, form=deleteUserForm, downloadDataForm=downloadDataForm)
 
-@app.route("/download_data", methods=["GET"])
+@app.route("/download_data", methods=["POST"])
 def download_data():
-    return downloadData(app)
+    lock = acquire_session_lock()
+    with lock:
+        return downloadData(app)
 
 @app.route("/delete_data", methods=["POST"])
 def delete_data():
-    return deleteData(app)
+    lock = acquire_session_lock()
+    with lock:
+        return deleteData(app)
 
 @app.route("/logout")
 def logout():

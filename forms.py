@@ -59,3 +59,6 @@ class LogEntryForm(FlaskForm):
 
 class DeleteUserForm(FlaskForm):
     submit = SubmitField('Delete my Data')
+
+class DownloadDataForm(FlaskForm):
+    submit = SubmitField('Download My Data')

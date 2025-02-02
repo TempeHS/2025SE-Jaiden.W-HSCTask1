@@ -60,8 +60,12 @@ def retrieveLogEntries(query=None, category=None):
     cur = conn.cursor()
     if query and category:
         query = f"%{query}%"
-        sql_query = f"SELECT * FROM log_entries_9f3b2 WHERE {category} LIKE ?"
-        cur.execute(sql_query, (query,))
+        allowed_categories = ["developer", "project", "developer_notes", "developer_code"]  # List of allowed column names
+        if category in allowed_categories:
+            sql_query = f"SELECT * FROM log_entries_9f3b2 WHERE {category} LIKE ?"
+            cur.execute(sql_query, (query,))
+        else:
+            raise ValueError("Invalid category")
     else:
         cur.execute("SELECT * FROM log_entries_9f3b2")
     rows = cur.fetchall()
@@ -84,10 +88,8 @@ def retrieveLogEntries(query=None, category=None):
 def retrieveUserData(username):
     conn = sql.connect(db_path)
     cur = conn.cursor()
-    # Retrieve user data
     cur.execute("SELECT * FROM secure_users_9f WHERE username = ?", (username,))
     user = cur.fetchone()
-    # Retrieve user's log entries
     cur.execute("SELECT * FROM log_entries_9f3b2 WHERE developer = ?", (username,))
     log_entries = cur.fetchall()
     conn.close()
@@ -119,9 +121,7 @@ def deleteUserData(username):
     conn = sql.connect(db_path)
     cur = conn.cursor()
     try:
-        # Delete user's log entries
         cur.execute("DELETE FROM log_entries_9f3b2 WHERE developer = ?", (username,))
-        # Delete user data
         cur.execute("DELETE FROM secure_users_9f WHERE username = ?", (username,))
         conn.commit()
         conn.close()
