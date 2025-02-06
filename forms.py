@@ -1,8 +1,24 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, DateTimeField, DecimalField, URLField, TextAreaField, HiddenField
-from wtforms.validators import DataRequired, Length, Regexp, URL
+from wtforms.validators import DataRequired, Length, Regexp, URL, ValidationError
 import html
 from datetime import datetime
+
+def has_uppercase(_form, field):
+    if not any(char.isupper() for char in field.data):
+        raise ValidationError('Password must contain at least one uppercase letter.')
+
+def has_lowercase(_form, field):
+    if not any(char.islower() for char in field.data):
+        raise ValidationError('Password must contain at least one lowercase letter.')
+
+def has_digit(_form, field):
+    if not any(char.isdigit() for char in field.data):
+        raise ValidationError('Password must contain at least one digit.')
+
+def has_special_char(_form, field):
+    if not any(char in '@$!%*?&' for char in field.data):
+        raise ValidationError('Password must contain at least one special character (@$!%*?&).')
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[
@@ -22,10 +38,10 @@ class SignUpForm(FlaskForm):
     password = PasswordField('Password', validators=[
         DataRequired(), 
         Length(min=8, max=128),
-        Regexp(
-            r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$',
-            message="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."
-        )
+        has_uppercase,
+        has_lowercase,
+        has_digit,
+        has_special_char
     ])
     submit = SubmitField('Sign Up')
 

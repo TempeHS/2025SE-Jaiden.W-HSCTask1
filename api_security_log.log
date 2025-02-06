@@ -738,3 +738,70 @@
 2025-02-02 03:55:28,430 INFO  * Restarting with stat
 2025-02-02 03:55:28,654 WARNING  * Debugger is active!
 2025-02-02 03:55:28,654 INFO  * Debugger PIN: 106-912-123
+2025-02-05 08:10:11,074 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.0.2.141:3000
+2025-02-05 08:10:11,075 INFO [33mPress CTRL+C to quit[0m
+2025-02-05 08:10:11,076 INFO  * Restarting with stat
+2025-02-05 08:10:11,305 WARNING  * Debugger is active!
+2025-02-05 08:10:11,305 INFO  * Debugger PIN: 492-587-942
+2025-02-05 08:41:21,425 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-05 08:41:21,464 INFO  * Restarting with stat
+2025-02-05 08:41:21,689 WARNING  * Debugger is active!
+2025-02-05 08:41:21,690 INFO  * Debugger PIN: 492-587-942
+2025-02-05 08:41:24,025 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-05 08:41:24,062 INFO  * Restarting with stat
+2025-02-05 08:41:24,278 WARNING  * Debugger is active!
+2025-02-05 08:41:24,279 INFO  * Debugger PIN: 492-587-942
+2025-02-06 07:01:23,614 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.0.2.62:3000
+2025-02-06 07:01:23,615 INFO [33mPress CTRL+C to quit[0m
+2025-02-06 07:01:23,616 INFO  * Restarting with stat
+2025-02-06 07:01:23,842 WARNING  * Debugger is active!
+2025-02-06 07:01:23,843 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:03:32,235 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[35m[1mPOST /api/signup HTTP/1.1[0m" 201 -
+2025-02-06 07:03:45,375 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-02-06 07:03:50,500 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-02-06 07:03:54,814 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-02-06 07:04:08,806 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-02-06 07:05:04,730 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-02-06 07:05:31,128 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "POST /api/login HTTP/1.1" 200 -
+2025-02-06 07:09:25,748 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:09:25,798 INFO  * Restarting with stat
+2025-02-06 07:09:26,065 WARNING  * Debugger is active!
+2025-02-06 07:09:26,066 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:09:44,719 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:09:44,758 INFO  * Restarting with stat
+2025-02-06 07:09:44,990 WARNING  * Debugger is active!
+2025-02-06 07:09:44,991 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:10:30,733 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:10:30,777 INFO  * Restarting with stat
+2025-02-06 07:10:31,003 WARNING  * Debugger is active!
+2025-02-06 07:10:31,004 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:12:15,564 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:12:15,608 INFO  * Restarting with stat
+2025-02-06 07:12:15,836 WARNING  * Debugger is active!
+2025-02-06 07:12:15,836 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:12:21,037 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:12:21,077 INFO  * Restarting with stat
+2025-02-06 07:12:21,302 WARNING  * Debugger is active!
+2025-02-06 07:12:21,302 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:12:23,313 DEBUG Received log entry data: {'developer': 'TestUser', 'project': 'SE2025', 'start_time': '2025-02-06 18:15', 'end_time': '2025-02-06 21:15', 'time_worked': 3.0, 'repo': 'https://github.com/example', 'developer_notes': 'example', 'developer_code': 'code\r\ncode\r\n', 'diary_entry': '2025-02-06 07:15:00'}
+2025-02-06 07:12:23,317 INFO Log entry submitted successfully
+2025-02-06 07:12:23,317 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[35m[1mPOST /api/logEntry HTTP/1.1[0m" 201 -
+2025-02-06 07:12:26,576 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "GET /api/logEntries HTTP/1.1" 200 -
+2025-02-06 07:12:52,610 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "GET /api/logEntries HTTP/1.1" 200 -
+2025-02-06 07:12:58,036 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "GET /api/logEntries HTTP/1.1" 200 -
+2025-02-06 07:13:01,733 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "GET /api/logEntries HTTP/1.1" 200 -
+2025-02-06 07:15:01,122 DEBUG Received log entry data: {'developer': 'TestUser', 'project': 'SE2025', 'start_time': '2025-02-06 18:15', 'end_time': '2025-02-07 18:15', 'time_worked': 24.0, 'repo': 'https://github.com/example', 'developer_notes': 'Testing for flash message', 'developer_code': 'FLASH!', 'diary_entry': '2025-02-06 07:15:00'}
+2025-02-06 07:15:01,124 INFO Log entry submitted successfully
+2025-02-06 07:15:01,125 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[35m[1mPOST /api/logEntry HTTP/1.1[0m" 201 -
+2025-02-06 07:15:07,957 INFO 127.0.0.1 - - [06/Feb/2025 07:15:07] "GET /api/logEntries HTTP/1.1" 200 -
+2025-02-06 07:15:13,498 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:15:13,542 INFO  * Restarting with stat
+2025-02-06 07:15:13,785 WARNING  * Debugger is active!
+2025-02-06 07:15:13,785 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:15:20,892 INFO 127.0.0.1 - - [06/Feb/2025 07:15:20] "GET /api/logEntries HTTP/1.1" 200 -

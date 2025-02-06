@@ -88,21 +88,21 @@ def root():
     }
 )
 def submit_log():
+    logEntryForm = LogEntryForm()
     if request.method == 'GET':
         if 'username' not in session:
             return redirect("/login.html")
         username = session['username']
         logEntryForm = LogEntryForm(username=username)
         return render_template('index.html', form=logEntryForm)
-    return handle_log_entry(logEntryForm)
+    if request.method == 'POST':
+        return handle_log_entry(logEntryForm)
 
 @app.route("/login.html", methods=["GET", "POST"])
 @limiter.limit("5 per minute")
 def login():
     loginForm = LoginForm()
-    lock = acquire_session_lock()
-    with lock:
-        return handle_login(loginForm)
+    return handle_login(loginForm)
 
 @app.route("/2fa", methods=["GET", "POST"])
 def two_factor():
@@ -114,9 +114,7 @@ def two_factor():
 @app.route("/signUp.html", methods=["GET", "POST"])
 def sign_up():
     signUpForm = SignUpForm()
-    lock = acquire_session_lock()
-    with lock:
-        return handle_sign_up(signUpForm)
+    return handle_sign_up(signUpForm)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():

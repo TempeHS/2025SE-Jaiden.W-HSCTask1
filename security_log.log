@@ -17031,3 +17031,458 @@ NameError: name 'diary_entry' is not defined
 2025-02-02 03:55:27,431 INFO  * Restarting with stat
 2025-02-02 03:55:27,765 WARNING  * Debugger is active!
 2025-02-02 03:55:27,765 INFO  * Debugger PIN: 106-912-123
+2025-02-05 08:09:59,618 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.141:5000
+2025-02-05 08:09:59,618 INFO [33mPress CTRL+C to quit[0m
+2025-02-05 08:09:59,619 INFO  * Restarting with stat
+2025-02-05 08:09:59,925 WARNING  * Debugger is active!
+2025-02-05 08:09:59,932 INFO  * Debugger PIN: 492-587-942
+2025-02-05 08:10:14,268 INFO 127.0.0.1 - - [05/Feb/2025 08:10:14] "[32mGET /?vscodeBrowserReqId=1738743015548 HTTP/1.1[0m" 302 -
+2025-02-05 08:10:14,458 INFO 127.0.0.1 - - [05/Feb/2025 08:10:14] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 08:10:14,715 INFO 127.0.0.1 - - [05/Feb/2025 08:10:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-05 08:10:14,759 INFO 127.0.0.1 - - [05/Feb/2025 08:10:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-02-05 08:10:14,762 INFO 127.0.0.1 - - [05/Feb/2025 08:10:14] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-02-05 08:10:15,604 INFO 127.0.0.1 - - [05/Feb/2025 08:10:15] "[32mGET / HTTP/1.1[0m" 302 -
+2025-02-05 08:10:15,789 INFO 127.0.0.1 - - [05/Feb/2025 08:10:15] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 08:10:20,678 INFO 127.0.0.1 - - [05/Feb/2025 08:10:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:20,682 INFO 127.0.0.1 - - [05/Feb/2025 08:10:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:20,694 INFO 127.0.0.1 - - [05/Feb/2025 08:10:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:20,883 INFO 127.0.0.1 - - [05/Feb/2025 08:10:20] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-02-05 08:10:20,915 INFO 127.0.0.1 - - [05/Feb/2025 08:10:20] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-02-05 08:10:25,577 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "GET /signUp.html HTTP/1.1" 200 -
+2025-02-05 08:10:25,669 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:25,674 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:25,679 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:25,718 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:25,748 INFO 127.0.0.1 - - [05/Feb/2025 08:10:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:26,782 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 08:10:26,872 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:26,876 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:26,879 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:26,920 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:26,956 INFO 127.0.0.1 - - [05/Feb/2025 08:10:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:31,258 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "GET /privacy.html HTTP/1.1" 200 -
+2025-02-05 08:10:31,351 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:31,354 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:31,359 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:31,392 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:31,423 INFO 127.0.0.1 - - [05/Feb/2025 08:10:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:37,007 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 08:10:37,105 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:37,108 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:10:37,109 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:37,151 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 08:10:37,183 INFO 127.0.0.1 - - [05/Feb/2025 08:10:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-05 08:41:22,622 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-05 08:41:22,668 INFO  * Restarting with stat
+2025-02-05 08:41:22,974 WARNING  * Debugger is active!
+2025-02-05 08:41:22,974 INFO  * Debugger PIN: 492-587-942
+2025-02-05 08:41:29,231 INFO 127.0.0.1 - - [05/Feb/2025 08:41:29] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 08:41:29,581 INFO 127.0.0.1 - - [05/Feb/2025 08:41:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:41:29,603 INFO 127.0.0.1 - - [05/Feb/2025 08:41:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:41:29,631 INFO 127.0.0.1 - - [05/Feb/2025 08:41:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:41:29,830 INFO 127.0.0.1 - - [05/Feb/2025 08:41:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 08:41:30,009 INFO 127.0.0.1 - - [05/Feb/2025 08:41:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-05 08:41:30,099 INFO 127.0.0.1 - - [05/Feb/2025 08:41:30] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-02-05 09:37:25,978 INFO 127.0.0.1 - - [05/Feb/2025 09:37:25] "GET /login.html HTTP/1.1" 200 -
+2025-02-05 09:37:26,678 INFO 127.0.0.1 - - [05/Feb/2025 09:37:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 09:37:26,701 INFO 127.0.0.1 - - [05/Feb/2025 09:37:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-05 09:37:26,770 INFO 127.0.0.1 - - [05/Feb/2025 09:37:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-05 09:37:27,434 INFO 127.0.0.1 - - [05/Feb/2025 09:37:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-05 09:37:28,069 INFO 127.0.0.1 - - [05/Feb/2025 09:37:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:11,927 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.62:5000
+2025-02-06 07:01:11,927 INFO [33mPress CTRL+C to quit[0m
+2025-02-06 07:01:11,927 INFO  * Restarting with stat
+2025-02-06 07:01:12,250 WARNING  * Debugger is active!
+2025-02-06 07:01:12,259 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:01:16,429 INFO 127.0.0.1 - - [06/Feb/2025 07:01:16] "[32mGET /?vscodeBrowserReqId=1738825284143 HTTP/1.1[0m" 302 -
+2025-02-06 07:01:16,627 INFO 127.0.0.1 - - [06/Feb/2025 07:01:16] "GET /login.html HTTP/1.1" 200 -
+2025-02-06 07:01:16,895 INFO 127.0.0.1 - - [06/Feb/2025 07:01:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:16,898 INFO 127.0.0.1 - - [06/Feb/2025 07:01:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:17,080 INFO 127.0.0.1 - - [06/Feb/2025 07:01:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:17,427 INFO 127.0.0.1 - - [06/Feb/2025 07:01:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:17,462 INFO 127.0.0.1 - - [06/Feb/2025 07:01:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:17,768 INFO 127.0.0.1 - - [06/Feb/2025 07:01:17] "[32mGET / HTTP/1.1[0m" 302 -
+2025-02-06 07:01:17,966 INFO 127.0.0.1 - - [06/Feb/2025 07:01:17] "GET /login.html HTTP/1.1" 200 -
+2025-02-06 07:01:18,218 INFO 127.0.0.1 - - [06/Feb/2025 07:01:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:18,249 INFO 127.0.0.1 - - [06/Feb/2025 07:01:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:18,255 INFO 127.0.0.1 - - [06/Feb/2025 07:01:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:18,429 INFO 127.0.0.1 - - [06/Feb/2025 07:01:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:18,461 INFO 127.0.0.1 - - [06/Feb/2025 07:01:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:27,715 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "GET /signUp.html HTTP/1.1" 200 -
+2025-02-06 07:01:27,826 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:27,831 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:27,833 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:27,877 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:27,914 INFO 127.0.0.1 - - [06/Feb/2025 07:01:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:36,724 WARNING Validation error in Password: Password must contain at least one uppercase letter.
+2025-02-06 07:01:36,724 WARNING Validation error in Password: Password must contain at least one digit.
+2025-02-06 07:01:36,724 WARNING Validation error in Password: Password must contain at least one special character (@$!%*?&).
+2025-02-06 07:01:36,726 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "POST /signUp.html HTTP/1.1" 200 -
+2025-02-06 07:01:36,815 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:36,816 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:36,820 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:01:36,856 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:01:36,892 INFO 127.0.0.1 - - [06/Feb/2025 07:01:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:02:56,450 WARNING Validation error in Password: Password must contain at least one special character (@$!%*?&).
+2025-02-06 07:02:56,453 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "POST /signUp.html HTTP/1.1" 200 -
+2025-02-06 07:02:56,586 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:02:56,587 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:02:56,588 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:02:56,630 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:02:56,665 INFO 127.0.0.1 - - [06/Feb/2025 07:02:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:32,127 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:03:32,236 DEBUG http://127.0.0.1:3000 "POST /api/signup HTTP/11" 201 45
+2025-02-06 07:03:32,236 INFO User 'TestingPassword' signed up successfully
+2025-02-06 07:03:32,237 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[32mPOST /signUp.html HTTP/1.1[0m" 302 -
+2025-02-06 07:03:32,274 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "GET /login.html HTTP/1.1" 200 -
+2025-02-06 07:03:32,398 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:32,398 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:32,399 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:32,562 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:32,682 INFO 127.0.0.1 - - [06/Feb/2025 07:03:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:45,372 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:03:45,376 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 401 48
+2025-02-06 07:03:45,376 ERROR Invalid login attempt for user: TestPassword - 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:3000/api/login
+2025-02-06 07:03:45,378 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "POST /login.html HTTP/1.1" 200 -
+2025-02-06 07:03:45,479 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:45,483 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:45,485 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:45,520 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:45,550 INFO 127.0.0.1 - - [06/Feb/2025 07:03:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:50,498 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:03:50,501 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 401 48
+2025-02-06 07:03:50,501 ERROR Invalid login attempt for user: TestPassword - 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:3000/api/login
+2025-02-06 07:03:50,502 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "POST /login.html HTTP/1.1" 200 -
+2025-02-06 07:03:50,582 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:50,588 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:50,589 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:50,627 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:50,661 INFO 127.0.0.1 - - [06/Feb/2025 07:03:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:54,812 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:03:54,814 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 401 48
+2025-02-06 07:03:54,814 ERROR Invalid login attempt for user: TestPassword - 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:3000/api/login
+2025-02-06 07:03:54,816 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "POST /login.html HTTP/1.1" 200 -
+2025-02-06 07:03:54,916 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:54,919 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:03:54,920 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:54,950 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:03:54,979 INFO 127.0.0.1 - - [06/Feb/2025 07:03:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:08,804 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:04:08,807 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 401 48
+2025-02-06 07:04:08,807 ERROR Invalid login attempt for user: TestPassword - 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:3000/api/login
+2025-02-06 07:04:08,809 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "POST /login.html HTTP/1.1" 200 -
+2025-02-06 07:04:08,899 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:04:08,901 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:04:08,906 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:08,938 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:08,988 INFO 127.0.0.1 - - [06/Feb/2025 07:04:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:16,785 INFO ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-02-06 07:04:16,785 WARNING Rate limit exceeded for IP: 127.0.0.1
+2025-02-06 07:04:16,787 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[31m[1mPOST /login.html HTTP/1.1[0m" 429 -
+2025-02-06 07:04:16,891 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:04:16,891 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:16,892 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:04:16,933 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:04:16,964 INFO 127.0.0.1 - - [06/Feb/2025 07:04:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,728 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:05:04,730 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 401 48
+2025-02-06 07:05:04,730 ERROR Invalid login attempt for user: TestPassword - 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:3000/api/login
+2025-02-06 07:05:04,732 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "POST /login.html HTTP/1.1" 200 -
+2025-02-06 07:05:04,821 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,823 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,823 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,857 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,888 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:04,966 INFO 127.0.0.1 - - [06/Feb/2025 07:05:04] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-02-06 07:05:31,037 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:05:31,129 DEBUG http://127.0.0.1:3000 "POST /api/login HTTP/11" 200 36
+2025-02-06 07:05:31,129 INFO User 'TestUser' logged in, hasn't passed 2FA
+2025-02-06 07:05:31,130 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[32mPOST /login.html HTTP/1.1[0m" 302 -
+2025-02-06 07:05:31,190 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "GET /2fa HTTP/1.1" 200 -
+2025-02-06 07:05:31,281 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:05:31,288 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:05:31,297 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:31,332 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:05:31,365 INFO 127.0.0.1 - - [06/Feb/2025 07:05:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,271 INFO 2FA successful, User 'TestUser' logged in successfully
+2025-02-06 07:06:06,272 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[32mPOST /2fa HTTP/1.1[0m" 302 -
+2025-02-06 07:06:06,308 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:06:06,341 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "GET / HTTP/1.1" 200 -
+2025-02-06 07:06:06,457 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,465 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,471 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "GET /static/js/timeWorked.js HTTP/1.1" 200 -
+2025-02-06 07:06:06,519 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,552 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,581 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:06:06,689 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/2fa","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:06:06,691 INFO 127.0.0.1 - - [06/Feb/2025 07:06:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:06:34,545 INFO 127.0.0.1 - - [06/Feb/2025 07:06:34] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-06 07:06:34,631 INFO 127.0.0.1 - - [06/Feb/2025 07:06:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-06 07:06:34,635 INFO 127.0.0.1 - - [06/Feb/2025 07:06:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-06 07:06:34,674 INFO 127.0.0.1 - - [06/Feb/2025 07:06:34] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=1nIVoPNCYBGxDOcX1j3o HTTP/1.1" 200 -
+2025-02-06 07:06:34,740 INFO 127.0.0.1 - - [06/Feb/2025 07:06:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-06 07:09:25,684 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:09:25,758 INFO  * Restarting with stat
+2025-02-06 07:09:26,136 WARNING  * Debugger is active!
+2025-02-06 07:09:26,136 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:09:44,804 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:09:44,862 INFO  * Restarting with stat
+2025-02-06 07:09:45,202 WARNING  * Debugger is active!
+2025-02-06 07:09:45,202 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:09:48,138 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/2fa","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:09:48,139 INFO 127.0.0.1 - - [06/Feb/2025 07:09:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:09:49,664 INFO 127.0.0.1 - - [06/Feb/2025 07:09:49] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:09:49,844 INFO 127.0.0.1 - - [06/Feb/2025 07:09:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-06 07:09:50,177 INFO 127.0.0.1 - - [06/Feb/2025 07:09:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:09:50,178 INFO 127.0.0.1 - - [06/Feb/2025 07:09:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-06 07:09:50,405 INFO 127.0.0.1 - - [06/Feb/2025 07:09:50] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=553CYnYGoMSTonyboGwr HTTP/1.1" 200 -
+2025-02-06 07:09:50,462 INFO 127.0.0.1 - - [06/Feb/2025 07:09:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-06 07:10:29,520 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:10:29,568 INFO  * Restarting with stat
+2025-02-06 07:10:29,893 WARNING  * Debugger is active!
+2025-02-06 07:10:29,893 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:10:45,198 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:45,283 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,287 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,288 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,325 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,356 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,391 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,462 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-06 07:10:45,511 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:45,513 INFO 127.0.0.1 - - [06/Feb/2025 07:10:45] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:10:47,079 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:10:47,116 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:47,196 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,200 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,203 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,233 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,263 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,293 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,415 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:47,416 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:10:47,768 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:10:47,807 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:47,920 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,927 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:47,927 INFO 127.0.0.1 - - [06/Feb/2025 07:10:47] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,000 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,071 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,126 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,169 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:10:48,235 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:48,237 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:48,240 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:10:48,370 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,376 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,379 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,430 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,551 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,617 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:10:48,666 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:48,672 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:48,673 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:10:48,766 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,769 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,775 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,828 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:48,887 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-02-06 07:10:48,919 INFO 127.0.0.1 - - [06/Feb/2025 07:10:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,012 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:49,014 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:10:49,563 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:10:49,595 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "GET / HTTP/1.1" 200 -
+2025-02-06 07:10:49,678 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,681 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,683 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,718 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,749 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,798 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:10:49,926 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:10:49,928 INFO 127.0.0.1 - - [06/Feb/2025 07:10:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:11:00,638 INFO 127.0.0.1 - - [06/Feb/2025 07:11:00] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-06 07:11:00,729 INFO 127.0.0.1 - - [06/Feb/2025 07:11:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:11:00,742 INFO 127.0.0.1 - - [06/Feb/2025 07:11:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-06 07:11:00,784 INFO 127.0.0.1 - - [06/Feb/2025 07:11:00] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=4RiUZSi2Fl0rhxOly0EB HTTP/1.1" 200 -
+2025-02-06 07:11:00,851 INFO 127.0.0.1 - - [06/Feb/2025 07:11:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-06 07:12:15,809 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:12:15,862 INFO  * Restarting with stat
+2025-02-06 07:12:16,176 WARNING  * Debugger is active!
+2025-02-06 07:12:16,176 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:12:21,384 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:12:21,436 INFO  * Restarting with stat
+2025-02-06 07:12:21,751 WARNING  * Debugger is active!
+2025-02-06 07:12:21,751 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:12:23,311 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:12:23,318 DEBUG http://127.0.0.1:3000 "POST /api/logEntry HTTP/11" 201 52
+2025-02-06 07:12:23,318 INFO Log entry submitted successfully by developer: TestUser
+2025-02-06 07:12:23,329 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "POST / HTTP/1.1" 200 -
+2025-02-06 07:12:23,424 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,616 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,618 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,823 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,860 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,897 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:23,965 INFO 127.0.0.1 - - [06/Feb/2025 07:12:23] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-06 07:12:24,053 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:12:24,054 INFO 127.0.0.1 - - [06/Feb/2025 07:12:24] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:12:26,571 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:12:26,577 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5357
+2025-02-06 07:12:26,577 INFO Successfully fetched log entries
+2025-02-06 07:12:26,583 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:12:26,682 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:26,683 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:26,689 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:26,690 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:26,696 INFO 127.0.0.1 - - [06/Feb/2025 07:12:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:51,826 INFO 127.0.0.1 - - [06/Feb/2025 07:12:51] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:12:51,861 INFO 127.0.0.1 - - [06/Feb/2025 07:12:51] "GET / HTTP/1.1" 200 -
+2025-02-06 07:12:51,966 INFO 127.0.0.1 - - [06/Feb/2025 07:12:51] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:51,966 INFO 127.0.0.1 - - [06/Feb/2025 07:12:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:51,968 INFO 127.0.0.1 - - [06/Feb/2025 07:12:51] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,021 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,064 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,105 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,344 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/entries.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:12:52,345 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:12:52,607 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:12:52,610 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5357
+2025-02-06 07:12:52,611 INFO Successfully fetched log entries
+2025-02-06 07:12:52,612 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:12:52,703 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,720 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,721 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,722 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:52,724 INFO 127.0.0.1 - - [06/Feb/2025 07:12:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:53,911 INFO 127.0.0.1 - - [06/Feb/2025 07:12:53] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:12:53,946 INFO 127.0.0.1 - - [06/Feb/2025 07:12:53] "GET / HTTP/1.1" 200 -
+2025-02-06 07:12:54,046 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,049 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,054 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,095 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,130 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,163 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:54,280 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/entries.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:12:54,281 INFO 127.0.0.1 - - [06/Feb/2025 07:12:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:12:58,034 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:12:58,036 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5357
+2025-02-06 07:12:58,036 INFO Successfully fetched log entries
+2025-02-06 07:12:58,038 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:12:58,127 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:58,131 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:58,140 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:58,141 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:58,143 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:58,956 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:12:58,991 INFO 127.0.0.1 - - [06/Feb/2025 07:12:58] "GET / HTTP/1.1" 200 -
+2025-02-06 07:12:59,093 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,100 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,100 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,132 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,168 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,199 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:12:59,301 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/entries.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:12:59,302 INFO 127.0.0.1 - - [06/Feb/2025 07:12:59] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:13:01,730 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:13:01,733 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5357
+2025-02-06 07:13:01,734 INFO Successfully fetched log entries
+2025-02-06 07:13:01,736 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:13:01,860 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:01,864 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:01,870 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:01,871 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:01,871 INFO 127.0.0.1 - - [06/Feb/2025 07:13:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:08,586 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "GET /profile.html HTTP/1.1" 200 -
+2025-02-06 07:13:08,695 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:08,699 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:08,705 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:08,750 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:08,785 INFO 127.0.0.1 - - [06/Feb/2025 07:13:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,470 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:13:09,503 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "GET / HTTP/1.1" 200 -
+2025-02-06 07:13:09,587 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,589 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,598 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,630 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,662 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,707 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:13:09,808 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/profile.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:13:09,809 INFO 127.0.0.1 - - [06/Feb/2025 07:13:09] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:14:35,525 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "GET / HTTP/1.1" 200 -
+2025-02-06 07:14:35,658 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,659 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,660 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,661 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,807 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,831 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,904 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-06 07:14:35,970 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/profile.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:14:35,971 INFO 127.0.0.1 - - [06/Feb/2025 07:14:35] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:15:01,120 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:15:01,125 DEBUG http://127.0.0.1:3000 "POST /api/logEntry HTTP/11" 201 52
+2025-02-06 07:15:01,126 INFO Log entry submitted successfully by developer: TestUser
+2025-02-06 07:15:01,127 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "POST / HTTP/1.1" 200 -
+2025-02-06 07:15:01,237 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,239 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,240 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,277 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,316 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,357 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:01,456 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:15:01,458 INFO 127.0.0.1 - - [06/Feb/2025 07:15:01] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:15:07,955 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:15:07,957 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5684
+2025-02-06 07:15:07,958 INFO Successfully fetched log entries
+2025-02-06 07:15:07,960 INFO 127.0.0.1 - - [06/Feb/2025 07:15:07] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:15:08,072 INFO 127.0.0.1 - - [06/Feb/2025 07:15:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:08,073 INFO 127.0.0.1 - - [06/Feb/2025 07:15:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:08,073 INFO 127.0.0.1 - - [06/Feb/2025 07:15:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:08,075 INFO 127.0.0.1 - - [06/Feb/2025 07:15:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:08,076 INFO 127.0.0.1 - - [06/Feb/2025 07:15:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:13,508 INFO  * Detected change in '/workspaces/2025SE-Jaiden.W-HSCTask1/main.py', reloading
+2025-02-06 07:15:13,566 INFO  * Restarting with stat
+2025-02-06 07:15:13,925 WARNING  * Debugger is active!
+2025-02-06 07:15:13,925 INFO  * Debugger PIN: 250-457-528
+2025-02-06 07:15:15,389 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "GET /profile.html HTTP/1.1" 200 -
+2025-02-06 07:15:15,491 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:15,495 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:15,495 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:15,532 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:15,563 INFO 127.0.0.1 - - [06/Feb/2025 07:15:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:16,314 INFO Received download data request for user: TestUser
+2025-02-06 07:15:16,315 INFO Data downloaded for user: TestUser
+2025-02-06 07:15:16,316 INFO 127.0.0.1 - - [06/Feb/2025 07:15:16] "POST /download_data HTTP/1.1" 200 -
+2025-02-06 07:15:16,464 INFO 127.0.0.1 - - [06/Feb/2025 07:15:16] "[31m[1mGET /download_data HTTP/1.1[0m" 405 -
+2025-02-06 07:15:20,889 DEBUG Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-06 07:15:20,892 DEBUG http://127.0.0.1:3000 "GET /api/logEntries HTTP/11" 200 5684
+2025-02-06 07:15:20,893 INFO Successfully fetched log entries
+2025-02-06 07:15:20,898 INFO 127.0.0.1 - - [06/Feb/2025 07:15:20] "GET /entries.html HTTP/1.1" 200 -
+2025-02-06 07:15:20,995 INFO 127.0.0.1 - - [06/Feb/2025 07:15:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:20,996 INFO 127.0.0.1 - - [06/Feb/2025 07:15:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,006 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,006 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,006 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,361 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-02-06 07:15:21,406 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "GET / HTTP/1.1" 200 -
+2025-02-06 07:15:21,517 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,524 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,529 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/timeWorked.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,570 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,604 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,634 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:21,736 CRITICAL {"csp-report":{"document-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/","referrer":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/entries.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'","disposition":"enforce","blocked-uri":"https://turbo-chainsaw-546w5rg7wvph7x96-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-06 07:15:21,738 INFO 127.0.0.1 - - [06/Feb/2025 07:15:21] "POST /csp_report HTTP/1.1" 200 -
+2025-02-06 07:15:22,010 INFO User 'TestUser' logged out successfully
+2025-02-06 07:15:22,013 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-02-06 07:15:22,057 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "GET /login.html HTTP/1.1" 200 -
+2025-02-06 07:15:22,165 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:22,166 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-06 07:15:22,167 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:22,202 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-02-06 07:15:22,243 INFO 127.0.0.1 - - [06/Feb/2025 07:15:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
