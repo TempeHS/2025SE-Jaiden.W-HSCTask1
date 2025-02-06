@@ -12,7 +12,7 @@
             <div class="input__wrapper">
                 {{ form.submit(class="btn") }}
             </div>
-            <a href="/index.html" class="btn btn-secondary">Back to Login</a>
+            <a href="{{ url_for('login') }}" class="btn btn-secondary">Back to Login</a>
             {% with messages = get_flashed_messages(with_categories=true) %}
                 {% if messages %}
                     <div class="flash-messages">

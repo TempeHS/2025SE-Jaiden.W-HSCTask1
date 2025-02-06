@@ -1,8 +1,25 @@
 {% extends 'layout.html' %}
+{% block head %}
+<meta name="description" content="View and search developer log entries.">
+{% endblock %}
 {% block content %}
 <h1 class="text-center my-4">Developer Log Entries</h1>
 <div class="container">
-    <form class="d-flex mb-4" role="search" action="/entries.html" method="get">
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    
+    <form class="d-flex mb-4" role="search" action="{{ url_for('entries') }}" method="get">
         <select class="form-select me-2" name="category" aria-label="Search Category">
             <option value="developer">Developer</option>
             <option value="project">Project</option>

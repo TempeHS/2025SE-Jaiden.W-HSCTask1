@@ -1,22 +1,19 @@
-import logging
-from flask import render_template, request, redirect, flash, session, send_file
-from forms import DeleteUserForm
-from databaseManagement import retrieveUserData, deleteUserData
+from flask import redirect, flash, session, send_file, url_for
 import io
 import json
-
-app_log = logging.getLogger(__name__)
+from databaseManagement import retrieveUserData, deleteUserData
 
 def downloadData(app):
     if 'username' not in session:
         app.logger.warning('Unauthorized access attempt to download data.')
-        return redirect("/login.html")
+        return redirect(url_for('login'))
     username = session['username']
+    app.logger.info(f'Received download data request for user: {username}')
     user_data = retrieveUserData(username)
     if not user_data:
         flash('No data found for the user.', 'danger')
         app.logger.info(f'No data found for user: {username}')
-        return redirect("/profile.html")
+        return redirect(url_for('profile'))
     # Convert user data to JSON
     user_data_json = json.dumps(user_data)
     # Create a BytesIO object and write the JSON data to it
@@ -29,15 +26,15 @@ def downloadData(app):
 def deleteData(app):
     if 'username' not in session:
         app.logger.warning('Unauthorized access attempt to delete data.')
-        return redirect("/login.html")
+        return redirect(url_for('login'))
     username = session['username']
     success = deleteUserData(username)
     if success:
         flash('Your data has been deleted successfully.', 'success')
         app.logger.info(f'Data deleted for user: {username}')
         session.clear()  # Clear the session after deleting user data
-        return redirect("/signUp.html")
+        return redirect(url_for('sign_up'))
     else:
         flash('An error occurred while deleting your data. Please try again later.', 'danger')
         app.logger.error(f'Error deleting data for user: {username}')
-        return redirect("/profile.html")
+        return redirect(url_for('profile'))
