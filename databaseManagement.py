@@ -60,9 +60,15 @@ def retrieveLogEntries(query=None, category=None):
     cur = conn.cursor()
     if query and category:
         query = f"%{query}%"
-        allowed_categories = ["developer", "project", "developer_notes", "developer_code"]  # List of allowed column names
+        allowed_categories = {
+            "developer": "developer",
+            "project": "project",
+            "developer_notes": "developer_notes",
+            "developer_code": "developer_code"
+        }  # Mapping of allowed column names
         if category in allowed_categories:
-            sql_query = f"SELECT * FROM log_entries_9f3b2 WHERE {category} LIKE ?"
+            column_name = allowed_categories[category]
+            sql_query = f"SELECT * FROM log_entries_9f3b2 WHERE {column_name} LIKE ?"
             cur.execute(sql_query, (query,))
         else:
             raise ValueError("Invalid category")
